@@ -3,7 +3,7 @@
 A **pure-Dart** core library for building Kaspa wallets and applications in Flutter.  
 Provides all on-chain wallet logic, BIP-standards, address/transaction encoding, protocol buffers/gRPC bindings, and utilities—**without any UI or platform-specific code**.
 
-Forked from (Kaspium)[https://github.com/azbuky/kaspium_wallet]
+Forked from [Kaspium](https://github.com/azbuky/kaspium_wallet
 
 ---
 
