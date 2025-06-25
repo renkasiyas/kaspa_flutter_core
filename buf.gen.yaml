@@ -1,0 +1,6 @@
+version: v1
+plugins:
+  # Core protobuf messages
+  - name: dart
+    out: lib
+    opt: [grpc]
