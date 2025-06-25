@@ -1,0 +1,3883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the KaspadResponse class from the messages.pb library, for the Dart programming language.">
+  <title>KaspadResponse class - messages.pb library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">kaspa_flutter_core</a></li>
+    <li><a href="../kaspa_grpc_messages.pb/">kaspa&#47;grpc&#47;messages.pb.dart</a></li>
+    <li class="self-crumb">KaspadResponse class</li>
+  </ol>
+  <div class="self-name">KaspadResponse</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <button class="toggle" id="theme-button" title="Toggle between light and dark mode" aria-label="Light and dark mode toggle">
+    <span id="dark-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      dark_mode
+    </span>
+    <span id="light-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      light_mode
+    </span>
+  </button>
+</header>
+<main>
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="kaspa_grpc_messages.pb&#47;kaspa_grpc_messages.pb-library-sidebar.html"
+    data-below-sidebar="kaspa_grpc_messages.pb&#47;KaspadResponse-class-sidebar.html">
+    <div>
+<h1><span class="kind-class">KaspadResponse</span> class 
+ 
+</h1></div>
+
+    
+
+
+    <section>
+      <dl class="dl-horizontal">
+        
+  <dt>Inheritance</dt>
+  <dd>
+    <ul class="gt-separated dark clazz-relationships">
+      <li><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></li>
+        <li><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage-class.html">GeneratedMessage</a></li>
+      <li>KaspadResponse</li>
+    </ul>
+  </dd>
+
+        
+        
+
+
+        
+  <dt>Available extensions</dt>
+  <dd><ul class="comma-separated clazz-relationships">
+      <li><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessageGenericExtensions.html">GeneratedMessageGenericExtensions</a></li>
+  </ul></dd>
+        
+
+
+      </dl>
+    </section>
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+    <dl class="constructor-summary-list">
+        <dt id="KaspadResponse.new" class="callable">
+          <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/KaspadResponse.html">KaspadResponse.new</a></span><span class="signature">({<span class="parameter" id="-param-id"><span class="type-annotation"><a href="https://pub.dev/documentation/fixnum/1.1.1/fixnum/Int64-class.html">Int64</a>?</span> <span class="parameter-name">id</span>, </span><span class="parameter" id="-param-getCurrentNetworkResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetCurrentNetworkResponseMessage-class.html">GetCurrentNetworkResponseMessage</a>?</span> <span class="parameter-name">getCurrentNetworkResponse</span>, </span><span class="parameter" id="-param-submitBlockResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/SubmitBlockResponseMessage-class.html">SubmitBlockResponseMessage</a>?</span> <span class="parameter-name">submitBlockResponse</span>, </span><span class="parameter" id="-param-getBlockTemplateResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBlockTemplateResponseMessage-class.html">GetBlockTemplateResponseMessage</a>?</span> <span class="parameter-name">getBlockTemplateResponse</span>, </span><span class="parameter" id="-param-notifyBlockAddedResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyBlockAddedResponseMessage-class.html">NotifyBlockAddedResponseMessage</a>?</span> <span class="parameter-name">notifyBlockAddedResponse</span>, </span><span class="parameter" id="-param-blockAddedNotification"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/BlockAddedNotificationMessage-class.html">BlockAddedNotificationMessage</a>?</span> <span class="parameter-name">blockAddedNotification</span>, </span><span class="parameter" id="-param-getPeerAddressesResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetPeerAddressesResponseMessage-class.html">GetPeerAddressesResponseMessage</a>?</span> <span class="parameter-name">getPeerAddressesResponse</span>, </span><span class="parameter" id="-param-getSinkResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetSinkResponseMessage-class.html">GetSinkResponseMessage</a>?</span> <span class="parameter-name">getSinkResponse</span>, </span><span class="parameter" id="-param-getMempoolEntryResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetMempoolEntryResponseMessage-class.html">GetMempoolEntryResponseMessage</a>?</span> <span class="parameter-name">getMempoolEntryResponse</span>, </span><span class="parameter" id="-param-getConnectedPeerInfoResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetConnectedPeerInfoResponseMessage-class.html">GetConnectedPeerInfoResponseMessage</a>?</span> <span class="parameter-name">getConnectedPeerInfoResponse</span>, </span><span class="parameter" id="-param-addPeerResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/AddPeerResponseMessage-class.html">AddPeerResponseMessage</a>?</span> <span class="parameter-name">addPeerResponse</span>, </span><span class="parameter" id="-param-submitTransactionResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/SubmitTransactionResponseMessage-class.html">SubmitTransactionResponseMessage</a>?</span> <span class="parameter-name">submitTransactionResponse</span>, </span><span class="parameter" id="-param-notifyVirtualChainChangedResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyVirtualChainChangedResponseMessage-class.html">NotifyVirtualChainChangedResponseMessage</a>?</span> <span class="parameter-name">notifyVirtualChainChangedResponse</span>, </span><span class="parameter" id="-param-virtualChainChangedNotification"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/VirtualChainChangedNotificationMessage-class.html">VirtualChainChangedNotificationMessage</a>?</span> <span class="parameter-name">virtualChainChangedNotification</span>, </span><span class="parameter" id="-param-getBlockResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBlockResponseMessage-class.html">GetBlockResponseMessage</a>?</span> <span class="parameter-name">getBlockResponse</span>, </span><span class="parameter" id="-param-getSubnetworkResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetSubnetworkResponseMessage-class.html">GetSubnetworkResponseMessage</a>?</span> <span class="parameter-name">getSubnetworkResponse</span>, </span><span class="parameter" id="-param-getVirtualChainFromBlockResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetVirtualChainFromBlockResponseMessage-class.html">GetVirtualChainFromBlockResponseMessage</a>?</span> <span class="parameter-name">getVirtualChainFromBlockResponse</span>, </span><span class="parameter" id="-param-getBlocksResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBlocksResponseMessage-class.html">GetBlocksResponseMessage</a>?</span> <span class="parameter-name">getBlocksResponse</span>, </span><span class="parameter" id="-param-getBlockCountResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBlockCountResponseMessage-class.html">GetBlockCountResponseMessage</a>?</span> <span class="parameter-name">getBlockCountResponse</span>, </span><span class="parameter" id="-param-getBlockDagInfoResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBlockDagInfoResponseMessage-class.html">GetBlockDagInfoResponseMessage</a>?</span> <span class="parameter-name">getBlockDagInfoResponse</span>, </span><span class="parameter" id="-param-resolveFinalityConflictResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/ResolveFinalityConflictResponseMessage-class.html">ResolveFinalityConflictResponseMessage</a>?</span> <span class="parameter-name">resolveFinalityConflictResponse</span>, </span><span class="parameter" id="-param-notifyFinalityConflictResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyFinalityConflictResponseMessage-class.html">NotifyFinalityConflictResponseMessage</a>?</span> <span class="parameter-name">notifyFinalityConflictResponse</span>, </span><span class="parameter" id="-param-finalityConflictNotification"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/FinalityConflictNotificationMessage-class.html">FinalityConflictNotificationMessage</a>?</span> <span class="parameter-name">finalityConflictNotification</span>, </span><span class="parameter" id="-param-finalityConflictResolvedNotification"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/FinalityConflictResolvedNotificationMessage-class.html">FinalityConflictResolvedNotificationMessage</a>?</span> <span class="parameter-name">finalityConflictResolvedNotification</span>, </span><span class="parameter" id="-param-getMempoolEntriesResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetMempoolEntriesResponseMessage-class.html">GetMempoolEntriesResponseMessage</a>?</span> <span class="parameter-name">getMempoolEntriesResponse</span>, </span><span class="parameter" id="-param-shutdownResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/ShutdownResponseMessage-class.html">ShutdownResponseMessage</a>?</span> <span class="parameter-name">shutdownResponse</span>, </span><span class="parameter" id="-param-getHeadersResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetHeadersResponseMessage-class.html">GetHeadersResponseMessage</a>?</span> <span class="parameter-name">getHeadersResponse</span>, </span><span class="parameter" id="-param-notifyUtxosChangedResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyUtxosChangedResponseMessage-class.html">NotifyUtxosChangedResponseMessage</a>?</span> <span class="parameter-name">notifyUtxosChangedResponse</span>, </span><span class="parameter" id="-param-utxosChangedNotification"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/UtxosChangedNotificationMessage-class.html">UtxosChangedNotificationMessage</a>?</span> <span class="parameter-name">utxosChangedNotification</span>, </span><span class="parameter" id="-param-getUtxosByAddressesResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetUtxosByAddressesResponseMessage-class.html">GetUtxosByAddressesResponseMessage</a>?</span> <span class="parameter-name">getUtxosByAddressesResponse</span>, </span><span class="parameter" id="-param-getSinkBlueScoreResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetSinkBlueScoreResponseMessage-class.html">GetSinkBlueScoreResponseMessage</a>?</span> <span class="parameter-name">getSinkBlueScoreResponse</span>, </span><span class="parameter" id="-param-notifySinkBlueScoreChangedResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifySinkBlueScoreChangedResponseMessage-class.html">NotifySinkBlueScoreChangedResponseMessage</a>?</span> <span class="parameter-name">notifySinkBlueScoreChangedResponse</span>, </span><span class="parameter" id="-param-sinkBlueScoreChangedNotification"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/SinkBlueScoreChangedNotificationMessage-class.html">SinkBlueScoreChangedNotificationMessage</a>?</span> <span class="parameter-name">sinkBlueScoreChangedNotification</span>, </span><span class="parameter" id="-param-banResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/BanResponseMessage-class.html">BanResponseMessage</a>?</span> <span class="parameter-name">banResponse</span>, </span><span class="parameter" id="-param-unbanResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/UnbanResponseMessage-class.html">UnbanResponseMessage</a>?</span> <span class="parameter-name">unbanResponse</span>, </span><span class="parameter" id="-param-getInfoResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetInfoResponseMessage-class.html">GetInfoResponseMessage</a>?</span> <span class="parameter-name">getInfoResponse</span>, </span><span class="parameter" id="-param-stopNotifyingUtxosChangedResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/StopNotifyingUtxosChangedResponseMessage-class.html">StopNotifyingUtxosChangedResponseMessage</a>?</span> <span class="parameter-name">stopNotifyingUtxosChangedResponse</span>, </span><span class="parameter" id="-param-notifyPruningPointUtxoSetOverrideResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyPruningPointUtxoSetOverrideResponseMessage-class.html">NotifyPruningPointUtxoSetOverrideResponseMessage</a>?</span> <span class="parameter-name">notifyPruningPointUtxoSetOverrideResponse</span>, </span><span class="parameter" id="-param-pruningPointUtxoSetOverrideNotification"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/PruningPointUtxoSetOverrideNotificationMessage-class.html">PruningPointUtxoSetOverrideNotificationMessage</a>?</span> <span class="parameter-name">pruningPointUtxoSetOverrideNotification</span>, </span><span class="parameter" id="-param-stopNotifyingPruningPointUtxoSetOverrideResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/StopNotifyingPruningPointUtxoSetOverrideResponseMessage-class.html">StopNotifyingPruningPointUtxoSetOverrideResponseMessage</a>?</span> <span class="parameter-name">stopNotifyingPruningPointUtxoSetOverrideResponse</span>, </span><span class="parameter" id="-param-estimateNetworkHashesPerSecondResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/EstimateNetworkHashesPerSecondResponseMessage-class.html">EstimateNetworkHashesPerSecondResponseMessage</a>?</span> <span class="parameter-name">estimateNetworkHashesPerSecondResponse</span>, </span><span class="parameter" id="-param-notifyVirtualDaaScoreChangedResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyVirtualDaaScoreChangedResponseMessage-class.html">NotifyVirtualDaaScoreChangedResponseMessage</a>?</span> <span class="parameter-name">notifyVirtualDaaScoreChangedResponse</span>, </span><span class="parameter" id="-param-virtualDaaScoreChangedNotification"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/VirtualDaaScoreChangedNotificationMessage-class.html">VirtualDaaScoreChangedNotificationMessage</a>?</span> <span class="parameter-name">virtualDaaScoreChangedNotification</span>, </span><span class="parameter" id="-param-getBalanceByAddressResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBalanceByAddressResponseMessage-class.html">GetBalanceByAddressResponseMessage</a>?</span> <span class="parameter-name">getBalanceByAddressResponse</span>, </span><span class="parameter" id="-param-getBalancesByAddressesResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBalancesByAddressesResponseMessage-class.html">GetBalancesByAddressesResponseMessage</a>?</span> <span class="parameter-name">getBalancesByAddressesResponse</span>, </span><span class="parameter" id="-param-notifyNewBlockTemplateResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyNewBlockTemplateResponseMessage-class.html">NotifyNewBlockTemplateResponseMessage</a>?</span> <span class="parameter-name">notifyNewBlockTemplateResponse</span>, </span><span class="parameter" id="-param-newBlockTemplateNotification"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NewBlockTemplateNotificationMessage-class.html">NewBlockTemplateNotificationMessage</a>?</span> <span class="parameter-name">newBlockTemplateNotification</span>, </span><span class="parameter" id="-param-getMempoolEntriesByAddressesResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetMempoolEntriesByAddressesResponseMessage-class.html">GetMempoolEntriesByAddressesResponseMessage</a>?</span> <span class="parameter-name">getMempoolEntriesByAddressesResponse</span>, </span><span class="parameter" id="-param-getCoinSupplyResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetCoinSupplyResponseMessage-class.html">GetCoinSupplyResponseMessage</a>?</span> <span class="parameter-name">getCoinSupplyResponse</span>, </span><span class="parameter" id="-param-pingResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/PingResponseMessage-class.html">PingResponseMessage</a>?</span> <span class="parameter-name">pingResponse</span>, </span><span class="parameter" id="-param-getMetricsResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetMetricsResponseMessage-class.html">GetMetricsResponseMessage</a>?</span> <span class="parameter-name">getMetricsResponse</span>, </span><span class="parameter" id="-param-getServerInfoResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetServerInfoResponseMessage-class.html">GetServerInfoResponseMessage</a>?</span> <span class="parameter-name">getServerInfoResponse</span>, </span><span class="parameter" id="-param-getSyncStatusResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetSyncStatusResponseMessage-class.html">GetSyncStatusResponseMessage</a>?</span> <span class="parameter-name">getSyncStatusResponse</span>, </span><span class="parameter" id="-param-getDaaScoreTimestampEstimateResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetDaaScoreTimestampEstimateResponseMessage-class.html">GetDaaScoreTimestampEstimateResponseMessage</a>?</span> <span class="parameter-name">getDaaScoreTimestampEstimateResponse</span>, </span><span class="parameter" id="-param-submitTransactionReplacementResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/SubmitTransactionReplacementResponseMessage-class.html">SubmitTransactionReplacementResponseMessage</a>?</span> <span class="parameter-name">submitTransactionReplacementResponse</span>, </span><span class="parameter" id="-param-getConnectionsResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetConnectionsResponseMessage-class.html">GetConnectionsResponseMessage</a>?</span> <span class="parameter-name">getConnectionsResponse</span>, </span><span class="parameter" id="-param-getSystemInfoResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetSystemInfoResponseMessage-class.html">GetSystemInfoResponseMessage</a>?</span> <span class="parameter-name">getSystemInfoResponse</span>, </span><span class="parameter" id="-param-getFeeEstimateResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetFeeEstimateResponseMessage-class.html">GetFeeEstimateResponseMessage</a>?</span> <span class="parameter-name">getFeeEstimateResponse</span>, </span><span class="parameter" id="-param-getFeeEstimateExperimentalResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetFeeEstimateExperimentalResponseMessage-class.html">GetFeeEstimateExperimentalResponseMessage</a>?</span> <span class="parameter-name">getFeeEstimateExperimentalResponse</span>, </span><span class="parameter" id="-param-getCurrentBlockColorResponse"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetCurrentBlockColorResponseMessage-class.html">GetCurrentBlockColorResponseMessage</a>?</span> <span class="parameter-name">getCurrentBlockColorResponse</span></span>})</span>
+        </dt>
+        <dd>
+          
+            <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="KaspadResponse.fromBuffer" class="callable">
+          <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/KaspadResponse.fromBuffer.html">KaspadResponse.fromBuffer</a></span><span class="signature">(<span class="parameter" id="fromBuffer-param-i"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> <span class="parameter-name">i</span>, [</span><span class="parameter" id="fromBuffer-param-r"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/ExtensionRegistry-class.html">ExtensionRegistry</a></span> <span class="parameter-name">r</span> = <span class="default-value">$pb.ExtensionRegistry.EMPTY</span></span>])</span>
+        </dt>
+        <dd>
+          
+            <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="KaspadResponse.fromJson" class="callable">
+          <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/KaspadResponse.fromJson.html">KaspadResponse.fromJson</a></span><span class="signature">(<span class="parameter" id="fromJson-param-i"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">i</span>, [</span><span class="parameter" id="fromJson-param-r"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/ExtensionRegistry-class.html">ExtensionRegistry</a></span> <span class="parameter-name">r</span> = <span class="default-value">$pb.ExtensionRegistry.EMPTY</span></span>])</span>
+        </dt>
+        <dd>
+          
+            <div class="constructor-modifier features">factory</div>
+        </dd>
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-properties">
+    <h2>Properties</h2>
+    <dl class="properties">
+        <dt id="addPeerResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/addPeerResponse.html">addPeerResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/AddPeerResponseMessage-class.html">AddPeerResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="banResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/banResponse.html">banResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/BanResponseMessage-class.html">BanResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="blockAddedNotification" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/blockAddedNotification.html">blockAddedNotification</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/BlockAddedNotificationMessage-class.html">BlockAddedNotificationMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="estimateNetworkHashesPerSecondResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/estimateNetworkHashesPerSecondResponse.html">estimateNetworkHashesPerSecondResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/EstimateNetworkHashesPerSecondResponseMessage-class.html">EstimateNetworkHashesPerSecondResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="finalityConflictNotification" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/finalityConflictNotification.html">finalityConflictNotification</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/FinalityConflictNotificationMessage-class.html">FinalityConflictNotificationMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="finalityConflictResolvedNotification" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/finalityConflictResolvedNotification.html">finalityConflictResolvedNotification</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/FinalityConflictResolvedNotificationMessage-class.html">FinalityConflictResolvedNotificationMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBalanceByAddressResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getBalanceByAddressResponse.html">getBalanceByAddressResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBalanceByAddressResponseMessage-class.html">GetBalanceByAddressResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBalancesByAddressesResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getBalancesByAddressesResponse.html">getBalancesByAddressesResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBalancesByAddressesResponseMessage-class.html">GetBalancesByAddressesResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBlockCountResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getBlockCountResponse.html">getBlockCountResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBlockCountResponseMessage-class.html">GetBlockCountResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBlockDagInfoResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getBlockDagInfoResponse.html">getBlockDagInfoResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBlockDagInfoResponseMessage-class.html">GetBlockDagInfoResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBlockResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getBlockResponse.html">getBlockResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBlockResponseMessage-class.html">GetBlockResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBlocksResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getBlocksResponse.html">getBlocksResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBlocksResponseMessage-class.html">GetBlocksResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBlockTemplateResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getBlockTemplateResponse.html">getBlockTemplateResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBlockTemplateResponseMessage-class.html">GetBlockTemplateResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getCoinSupplyResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getCoinSupplyResponse.html">getCoinSupplyResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetCoinSupplyResponseMessage-class.html">GetCoinSupplyResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getConnectedPeerInfoResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getConnectedPeerInfoResponse.html">getConnectedPeerInfoResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetConnectedPeerInfoResponseMessage-class.html">GetConnectedPeerInfoResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getConnectionsResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getConnectionsResponse.html">getConnectionsResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetConnectionsResponseMessage-class.html">GetConnectionsResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getCurrentBlockColorResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getCurrentBlockColorResponse.html">getCurrentBlockColorResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetCurrentBlockColorResponseMessage-class.html">GetCurrentBlockColorResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getCurrentNetworkResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getCurrentNetworkResponse.html">getCurrentNetworkResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetCurrentNetworkResponseMessage-class.html">GetCurrentNetworkResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getDaaScoreTimestampEstimateResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getDaaScoreTimestampEstimateResponse.html">getDaaScoreTimestampEstimateResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetDaaScoreTimestampEstimateResponseMessage-class.html">GetDaaScoreTimestampEstimateResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getFeeEstimateExperimentalResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getFeeEstimateExperimentalResponse.html">getFeeEstimateExperimentalResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetFeeEstimateExperimentalResponseMessage-class.html">GetFeeEstimateExperimentalResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getFeeEstimateResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getFeeEstimateResponse.html">getFeeEstimateResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetFeeEstimateResponseMessage-class.html">GetFeeEstimateResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getHeadersResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getHeadersResponse.html">getHeadersResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetHeadersResponseMessage-class.html">GetHeadersResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getInfoResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getInfoResponse.html">getInfoResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetInfoResponseMessage-class.html">GetInfoResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getMempoolEntriesByAddressesResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getMempoolEntriesByAddressesResponse.html">getMempoolEntriesByAddressesResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetMempoolEntriesByAddressesResponseMessage-class.html">GetMempoolEntriesByAddressesResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getMempoolEntriesResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getMempoolEntriesResponse.html">getMempoolEntriesResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetMempoolEntriesResponseMessage-class.html">GetMempoolEntriesResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getMempoolEntryResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getMempoolEntryResponse.html">getMempoolEntryResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetMempoolEntryResponseMessage-class.html">GetMempoolEntryResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getMetricsResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getMetricsResponse.html">getMetricsResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetMetricsResponseMessage-class.html">GetMetricsResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getPeerAddressesResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getPeerAddressesResponse.html">getPeerAddressesResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetPeerAddressesResponseMessage-class.html">GetPeerAddressesResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getServerInfoResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getServerInfoResponse.html">getServerInfoResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetServerInfoResponseMessage-class.html">GetServerInfoResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getSinkBlueScoreResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getSinkBlueScoreResponse.html">getSinkBlueScoreResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetSinkBlueScoreResponseMessage-class.html">GetSinkBlueScoreResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getSinkResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getSinkResponse.html">getSinkResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetSinkResponseMessage-class.html">GetSinkResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getSubnetworkResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getSubnetworkResponse.html">getSubnetworkResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetSubnetworkResponseMessage-class.html">GetSubnetworkResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getSyncStatusResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getSyncStatusResponse.html">getSyncStatusResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetSyncStatusResponseMessage-class.html">GetSyncStatusResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getSystemInfoResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getSystemInfoResponse.html">getSystemInfoResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetSystemInfoResponseMessage-class.html">GetSystemInfoResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getUtxosByAddressesResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getUtxosByAddressesResponse.html">getUtxosByAddressesResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetUtxosByAddressesResponseMessage-class.html">GetUtxosByAddressesResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getVirtualChainFromBlockResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getVirtualChainFromBlockResponse.html">getVirtualChainFromBlockResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetVirtualChainFromBlockResponseMessage-class.html">GetVirtualChainFromBlockResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  Calculates a hash code based on the contents of the protobuf.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="id" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/id.html">id</a></span>
+  <span class="signature">&#8596; <a href="https://pub.dev/documentation/fixnum/1.1.1/fixnum/Int64-class.html">Int64</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="info_" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/info_.html">info_</a></span>
+  <span class="signature">&#8594; <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/BuilderInfo-class.html">BuilderInfo</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">no setter</span><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="isFrozen" class="property inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/isFrozen.html">isFrozen</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns <code>true</code> if this message is marked read-only. Otherwise <code>false</code>.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="newBlockTemplateNotification" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/newBlockTemplateNotification.html">newBlockTemplateNotification</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NewBlockTemplateNotificationMessage-class.html">NewBlockTemplateNotificationMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifyBlockAddedResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/notifyBlockAddedResponse.html">notifyBlockAddedResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyBlockAddedResponseMessage-class.html">NotifyBlockAddedResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifyFinalityConflictResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/notifyFinalityConflictResponse.html">notifyFinalityConflictResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyFinalityConflictResponseMessage-class.html">NotifyFinalityConflictResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifyNewBlockTemplateResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/notifyNewBlockTemplateResponse.html">notifyNewBlockTemplateResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyNewBlockTemplateResponseMessage-class.html">NotifyNewBlockTemplateResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifyPruningPointUtxoSetOverrideResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/notifyPruningPointUtxoSetOverrideResponse.html">notifyPruningPointUtxoSetOverrideResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyPruningPointUtxoSetOverrideResponseMessage-class.html">NotifyPruningPointUtxoSetOverrideResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifySinkBlueScoreChangedResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/notifySinkBlueScoreChangedResponse.html">notifySinkBlueScoreChangedResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifySinkBlueScoreChangedResponseMessage-class.html">NotifySinkBlueScoreChangedResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifyUtxosChangedResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/notifyUtxosChangedResponse.html">notifyUtxosChangedResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyUtxosChangedResponseMessage-class.html">NotifyUtxosChangedResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifyVirtualChainChangedResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/notifyVirtualChainChangedResponse.html">notifyVirtualChainChangedResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyVirtualChainChangedResponseMessage-class.html">NotifyVirtualChainChangedResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifyVirtualDaaScoreChangedResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/notifyVirtualDaaScoreChangedResponse.html">notifyVirtualDaaScoreChangedResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyVirtualDaaScoreChangedResponseMessage-class.html">NotifyVirtualDaaScoreChangedResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="pingResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/pingResponse.html">pingResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/PingResponseMessage-class.html">PingResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="pruningPointUtxoSetOverrideNotification" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/pruningPointUtxoSetOverrideNotification.html">pruningPointUtxoSetOverrideNotification</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/PruningPointUtxoSetOverrideNotificationMessage-class.html">PruningPointUtxoSetOverrideNotificationMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="resolveFinalityConflictResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/resolveFinalityConflictResponse.html">resolveFinalityConflictResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/ResolveFinalityConflictResponseMessage-class.html">ResolveFinalityConflictResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="shutdownResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/shutdownResponse.html">shutdownResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/ShutdownResponseMessage-class.html">ShutdownResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="sinkBlueScoreChangedNotification" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/sinkBlueScoreChangedNotification.html">sinkBlueScoreChangedNotification</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/SinkBlueScoreChangedNotificationMessage-class.html">SinkBlueScoreChangedNotificationMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="stopNotifyingPruningPointUtxoSetOverrideResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/stopNotifyingPruningPointUtxoSetOverrideResponse.html">stopNotifyingPruningPointUtxoSetOverrideResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/StopNotifyingPruningPointUtxoSetOverrideResponseMessage-class.html">StopNotifyingPruningPointUtxoSetOverrideResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="stopNotifyingUtxosChangedResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/stopNotifyingUtxosChangedResponse.html">stopNotifyingUtxosChangedResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/StopNotifyingUtxosChangedResponseMessage-class.html">StopNotifyingUtxosChangedResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="submitBlockResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/submitBlockResponse.html">submitBlockResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/SubmitBlockResponseMessage-class.html">SubmitBlockResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="submitTransactionReplacementResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/submitTransactionReplacementResponse.html">submitTransactionReplacementResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/SubmitTransactionReplacementResponseMessage-class.html">SubmitTransactionReplacementResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="submitTransactionResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/submitTransactionResponse.html">submitTransactionResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/SubmitTransactionResponseMessage-class.html">SubmitTransactionResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="unbanResponse" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/unbanResponse.html">unbanResponse</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/UnbanResponseMessage-class.html">UnbanResponseMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="unknownFields" class="property inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/unknownFields.html">unknownFields</a></span>
+  <span class="signature">&#8594; <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/UnknownFieldSet-class.html">UnknownFieldSet</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="utxosChangedNotification" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/utxosChangedNotification.html">utxosChangedNotification</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/UtxosChangedNotificationMessage-class.html">UtxosChangedNotificationMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="virtualChainChangedNotification" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/virtualChainChangedNotification.html">virtualChainChangedNotification</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/VirtualChainChangedNotificationMessage-class.html">VirtualChainChangedNotificationMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="virtualDaaScoreChangedNotification" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/virtualDaaScoreChangedNotification.html">virtualDaaScoreChangedNotification</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/VirtualDaaScoreChangedNotificationMessage-class.html">VirtualDaaScoreChangedNotificationMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="addExtension" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/addExtension.html">addExtension</a></span><span class="signature">(<wbr><span class="parameter" id="addExtension-param-extension"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/Extension-class.html">Extension</a></span> <span class="parameter-name">extension</span>, </span><span class="parameter" id="addExtension-param-value"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a>?</span> <span class="parameter-name">value</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Adds an extension field value to a repeated field.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="check" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/check.html">check</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Throws a <a href="https://api.flutter.dev/flutter/dart-core/StateError-class.html">StateError</a> if the message has required fields without a value.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="clear" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/clear.html">clear</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Clears all data that was set in this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="clearAddPeerResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearAddPeerResponse.html">clearAddPeerResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearBanResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearBanResponse.html">clearBanResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearBlockAddedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearBlockAddedNotification.html">clearBlockAddedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearEstimateNetworkHashesPerSecondResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearEstimateNetworkHashesPerSecondResponse.html">clearEstimateNetworkHashesPerSecondResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearExtension" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/clearExtension.html">clearExtension</a></span><span class="signature">(<wbr><span class="parameter" id="clearExtension-param-extension"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/Extension-class.html">Extension</a></span> <span class="parameter-name">extension</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Clears an extension field and also removes the extension.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="clearField" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/clearField.html">clearField</a></span><span class="signature">(<wbr><span class="parameter" id="clearField-param-tagNumber"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">tagNumber</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Clears the contents of a given field.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="clearFinalityConflictNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearFinalityConflictNotification.html">clearFinalityConflictNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearFinalityConflictResolvedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearFinalityConflictResolvedNotification.html">clearFinalityConflictResolvedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetBalanceByAddressResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetBalanceByAddressResponse.html">clearGetBalanceByAddressResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetBalancesByAddressesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetBalancesByAddressesResponse.html">clearGetBalancesByAddressesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetBlockCountResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetBlockCountResponse.html">clearGetBlockCountResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetBlockDagInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetBlockDagInfoResponse.html">clearGetBlockDagInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetBlockResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetBlockResponse.html">clearGetBlockResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetBlocksResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetBlocksResponse.html">clearGetBlocksResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetBlockTemplateResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetBlockTemplateResponse.html">clearGetBlockTemplateResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetCoinSupplyResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetCoinSupplyResponse.html">clearGetCoinSupplyResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetConnectedPeerInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetConnectedPeerInfoResponse.html">clearGetConnectedPeerInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetConnectionsResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetConnectionsResponse.html">clearGetConnectionsResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetCurrentBlockColorResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetCurrentBlockColorResponse.html">clearGetCurrentBlockColorResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetCurrentNetworkResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetCurrentNetworkResponse.html">clearGetCurrentNetworkResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetDaaScoreTimestampEstimateResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetDaaScoreTimestampEstimateResponse.html">clearGetDaaScoreTimestampEstimateResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetFeeEstimateExperimentalResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetFeeEstimateExperimentalResponse.html">clearGetFeeEstimateExperimentalResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetFeeEstimateResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetFeeEstimateResponse.html">clearGetFeeEstimateResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetHeadersResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetHeadersResponse.html">clearGetHeadersResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetInfoResponse.html">clearGetInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetMempoolEntriesByAddressesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetMempoolEntriesByAddressesResponse.html">clearGetMempoolEntriesByAddressesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetMempoolEntriesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetMempoolEntriesResponse.html">clearGetMempoolEntriesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetMempoolEntryResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetMempoolEntryResponse.html">clearGetMempoolEntryResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetMetricsResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetMetricsResponse.html">clearGetMetricsResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetPeerAddressesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetPeerAddressesResponse.html">clearGetPeerAddressesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetServerInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetServerInfoResponse.html">clearGetServerInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetSinkBlueScoreResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetSinkBlueScoreResponse.html">clearGetSinkBlueScoreResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetSinkResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetSinkResponse.html">clearGetSinkResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetSubnetworkResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetSubnetworkResponse.html">clearGetSubnetworkResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetSyncStatusResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetSyncStatusResponse.html">clearGetSyncStatusResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetSystemInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetSystemInfoResponse.html">clearGetSystemInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetUtxosByAddressesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetUtxosByAddressesResponse.html">clearGetUtxosByAddressesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetVirtualChainFromBlockResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearGetVirtualChainFromBlockResponse.html">clearGetVirtualChainFromBlockResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearId" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearId.html">clearId</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNewBlockTemplateNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearNewBlockTemplateNotification.html">clearNewBlockTemplateNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyBlockAddedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearNotifyBlockAddedResponse.html">clearNotifyBlockAddedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyFinalityConflictResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearNotifyFinalityConflictResponse.html">clearNotifyFinalityConflictResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyNewBlockTemplateResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearNotifyNewBlockTemplateResponse.html">clearNotifyNewBlockTemplateResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyPruningPointUtxoSetOverrideResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearNotifyPruningPointUtxoSetOverrideResponse.html">clearNotifyPruningPointUtxoSetOverrideResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifySinkBlueScoreChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearNotifySinkBlueScoreChangedResponse.html">clearNotifySinkBlueScoreChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyUtxosChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearNotifyUtxosChangedResponse.html">clearNotifyUtxosChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyVirtualChainChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearNotifyVirtualChainChangedResponse.html">clearNotifyVirtualChainChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyVirtualDaaScoreChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearNotifyVirtualDaaScoreChangedResponse.html">clearNotifyVirtualDaaScoreChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearPayload" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearPayload.html">clearPayload</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearPingResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearPingResponse.html">clearPingResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearPruningPointUtxoSetOverrideNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearPruningPointUtxoSetOverrideNotification.html">clearPruningPointUtxoSetOverrideNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearResolveFinalityConflictResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearResolveFinalityConflictResponse.html">clearResolveFinalityConflictResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearShutdownResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearShutdownResponse.html">clearShutdownResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearSinkBlueScoreChangedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearSinkBlueScoreChangedNotification.html">clearSinkBlueScoreChangedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearStopNotifyingPruningPointUtxoSetOverrideResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearStopNotifyingPruningPointUtxoSetOverrideResponse.html">clearStopNotifyingPruningPointUtxoSetOverrideResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearStopNotifyingUtxosChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearStopNotifyingUtxosChangedResponse.html">clearStopNotifyingUtxosChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearSubmitBlockResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearSubmitBlockResponse.html">clearSubmitBlockResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearSubmitTransactionReplacementResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearSubmitTransactionReplacementResponse.html">clearSubmitTransactionReplacementResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearSubmitTransactionResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearSubmitTransactionResponse.html">clearSubmitTransactionResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearUnbanResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearUnbanResponse.html">clearUnbanResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearUtxosChangedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearUtxosChangedNotification.html">clearUtxosChangedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearVirtualChainChangedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearVirtualChainChangedNotification.html">clearVirtualChainChangedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearVirtualDaaScoreChangedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/clearVirtualDaaScoreChangedNotification.html">clearVirtualDaaScoreChangedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clone" class="callable">
+  <span class="name deprecated"><a class="deprecated" href="../kaspa_grpc_messages.pb/KaspadResponse/clone.html">clone</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_messages.pb/KaspadResponse-class.html">KaspadResponse</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Creates a deep copy of the fields in this message.
+(The generated code uses <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromMessage.html">mergeFromMessage</a>.)
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="copyWith" class="callable">
+  <span class="name deprecated"><a class="deprecated" href="../kaspa_grpc_messages.pb/KaspadResponse/copyWith.html">copyWith</a></span><span class="signature">(<wbr><span class="parameter" id="copyWith-param-updates"><span class="type-annotation">void</span> <span class="parameter-name">updates</span>(<span class="parameter" id="param-"><span class="type-annotation"><a href="../kaspa_grpc_messages.pb/KaspadResponse-class.html">KaspadResponse</a></span></span>)</span>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_messages.pb/KaspadResponse-class.html">KaspadResponse</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Apply <code>updates</code> to a copy of this message.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="createEmptyInstance" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/createEmptyInstance.html">createEmptyInstance</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_messages.pb/KaspadResponse-class.html">KaspadResponse</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Creates an empty instance of the same message type as this.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="deepCopy" class="callable">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessageGenericExtensions/deepCopy.html">deepCopy</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; T</span>
+  </span>
+  
+
+</dt>
+<dd>
+      <p class="from-extension">
+        <span>Available on T,
+        provided by the <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessageGenericExtensions.html">GeneratedMessageGenericExtensions</a> extension</span>
+      </p>
+  Returns a writable deep copy of this message.
+  
+
+</dd>
+
+        <dt id="ensureAddPeerResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureAddPeerResponse.html">ensureAddPeerResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/AddPeerResponseMessage-class.html">AddPeerResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureBanResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureBanResponse.html">ensureBanResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/BanResponseMessage-class.html">BanResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureBlockAddedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureBlockAddedNotification.html">ensureBlockAddedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/BlockAddedNotificationMessage-class.html">BlockAddedNotificationMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureEstimateNetworkHashesPerSecondResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureEstimateNetworkHashesPerSecondResponse.html">ensureEstimateNetworkHashesPerSecondResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/EstimateNetworkHashesPerSecondResponseMessage-class.html">EstimateNetworkHashesPerSecondResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureFinalityConflictNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureFinalityConflictNotification.html">ensureFinalityConflictNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/FinalityConflictNotificationMessage-class.html">FinalityConflictNotificationMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureFinalityConflictResolvedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureFinalityConflictResolvedNotification.html">ensureFinalityConflictResolvedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/FinalityConflictResolvedNotificationMessage-class.html">FinalityConflictResolvedNotificationMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBalanceByAddressResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetBalanceByAddressResponse.html">ensureGetBalanceByAddressResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBalanceByAddressResponseMessage-class.html">GetBalanceByAddressResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBalancesByAddressesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetBalancesByAddressesResponse.html">ensureGetBalancesByAddressesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBalancesByAddressesResponseMessage-class.html">GetBalancesByAddressesResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBlockCountResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetBlockCountResponse.html">ensureGetBlockCountResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBlockCountResponseMessage-class.html">GetBlockCountResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBlockDagInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetBlockDagInfoResponse.html">ensureGetBlockDagInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBlockDagInfoResponseMessage-class.html">GetBlockDagInfoResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBlockResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetBlockResponse.html">ensureGetBlockResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBlockResponseMessage-class.html">GetBlockResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBlocksResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetBlocksResponse.html">ensureGetBlocksResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBlocksResponseMessage-class.html">GetBlocksResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBlockTemplateResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetBlockTemplateResponse.html">ensureGetBlockTemplateResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBlockTemplateResponseMessage-class.html">GetBlockTemplateResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetCoinSupplyResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetCoinSupplyResponse.html">ensureGetCoinSupplyResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetCoinSupplyResponseMessage-class.html">GetCoinSupplyResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetConnectedPeerInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetConnectedPeerInfoResponse.html">ensureGetConnectedPeerInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetConnectedPeerInfoResponseMessage-class.html">GetConnectedPeerInfoResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetConnectionsResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetConnectionsResponse.html">ensureGetConnectionsResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetConnectionsResponseMessage-class.html">GetConnectionsResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetCurrentBlockColorResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetCurrentBlockColorResponse.html">ensureGetCurrentBlockColorResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetCurrentBlockColorResponseMessage-class.html">GetCurrentBlockColorResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetCurrentNetworkResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetCurrentNetworkResponse.html">ensureGetCurrentNetworkResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetCurrentNetworkResponseMessage-class.html">GetCurrentNetworkResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetDaaScoreTimestampEstimateResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetDaaScoreTimestampEstimateResponse.html">ensureGetDaaScoreTimestampEstimateResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetDaaScoreTimestampEstimateResponseMessage-class.html">GetDaaScoreTimestampEstimateResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetFeeEstimateExperimentalResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetFeeEstimateExperimentalResponse.html">ensureGetFeeEstimateExperimentalResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetFeeEstimateExperimentalResponseMessage-class.html">GetFeeEstimateExperimentalResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetFeeEstimateResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetFeeEstimateResponse.html">ensureGetFeeEstimateResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetFeeEstimateResponseMessage-class.html">GetFeeEstimateResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetHeadersResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetHeadersResponse.html">ensureGetHeadersResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetHeadersResponseMessage-class.html">GetHeadersResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetInfoResponse.html">ensureGetInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetInfoResponseMessage-class.html">GetInfoResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetMempoolEntriesByAddressesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetMempoolEntriesByAddressesResponse.html">ensureGetMempoolEntriesByAddressesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetMempoolEntriesByAddressesResponseMessage-class.html">GetMempoolEntriesByAddressesResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetMempoolEntriesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetMempoolEntriesResponse.html">ensureGetMempoolEntriesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetMempoolEntriesResponseMessage-class.html">GetMempoolEntriesResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetMempoolEntryResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetMempoolEntryResponse.html">ensureGetMempoolEntryResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetMempoolEntryResponseMessage-class.html">GetMempoolEntryResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetMetricsResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetMetricsResponse.html">ensureGetMetricsResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetMetricsResponseMessage-class.html">GetMetricsResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetPeerAddressesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetPeerAddressesResponse.html">ensureGetPeerAddressesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetPeerAddressesResponseMessage-class.html">GetPeerAddressesResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetServerInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetServerInfoResponse.html">ensureGetServerInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetServerInfoResponseMessage-class.html">GetServerInfoResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetSinkBlueScoreResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetSinkBlueScoreResponse.html">ensureGetSinkBlueScoreResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetSinkBlueScoreResponseMessage-class.html">GetSinkBlueScoreResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetSinkResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetSinkResponse.html">ensureGetSinkResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetSinkResponseMessage-class.html">GetSinkResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetSubnetworkResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetSubnetworkResponse.html">ensureGetSubnetworkResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetSubnetworkResponseMessage-class.html">GetSubnetworkResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetSyncStatusResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetSyncStatusResponse.html">ensureGetSyncStatusResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetSyncStatusResponseMessage-class.html">GetSyncStatusResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetSystemInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetSystemInfoResponse.html">ensureGetSystemInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetSystemInfoResponseMessage-class.html">GetSystemInfoResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetUtxosByAddressesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetUtxosByAddressesResponse.html">ensureGetUtxosByAddressesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetUtxosByAddressesResponseMessage-class.html">GetUtxosByAddressesResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetVirtualChainFromBlockResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureGetVirtualChainFromBlockResponse.html">ensureGetVirtualChainFromBlockResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetVirtualChainFromBlockResponseMessage-class.html">GetVirtualChainFromBlockResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNewBlockTemplateNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureNewBlockTemplateNotification.html">ensureNewBlockTemplateNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NewBlockTemplateNotificationMessage-class.html">NewBlockTemplateNotificationMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyBlockAddedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureNotifyBlockAddedResponse.html">ensureNotifyBlockAddedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyBlockAddedResponseMessage-class.html">NotifyBlockAddedResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyFinalityConflictResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureNotifyFinalityConflictResponse.html">ensureNotifyFinalityConflictResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyFinalityConflictResponseMessage-class.html">NotifyFinalityConflictResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyNewBlockTemplateResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureNotifyNewBlockTemplateResponse.html">ensureNotifyNewBlockTemplateResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyNewBlockTemplateResponseMessage-class.html">NotifyNewBlockTemplateResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyPruningPointUtxoSetOverrideResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureNotifyPruningPointUtxoSetOverrideResponse.html">ensureNotifyPruningPointUtxoSetOverrideResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyPruningPointUtxoSetOverrideResponseMessage-class.html">NotifyPruningPointUtxoSetOverrideResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifySinkBlueScoreChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureNotifySinkBlueScoreChangedResponse.html">ensureNotifySinkBlueScoreChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifySinkBlueScoreChangedResponseMessage-class.html">NotifySinkBlueScoreChangedResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyUtxosChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureNotifyUtxosChangedResponse.html">ensureNotifyUtxosChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyUtxosChangedResponseMessage-class.html">NotifyUtxosChangedResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyVirtualChainChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureNotifyVirtualChainChangedResponse.html">ensureNotifyVirtualChainChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyVirtualChainChangedResponseMessage-class.html">NotifyVirtualChainChangedResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyVirtualDaaScoreChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureNotifyVirtualDaaScoreChangedResponse.html">ensureNotifyVirtualDaaScoreChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyVirtualDaaScoreChangedResponseMessage-class.html">NotifyVirtualDaaScoreChangedResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensurePingResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensurePingResponse.html">ensurePingResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/PingResponseMessage-class.html">PingResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensurePruningPointUtxoSetOverrideNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensurePruningPointUtxoSetOverrideNotification.html">ensurePruningPointUtxoSetOverrideNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/PruningPointUtxoSetOverrideNotificationMessage-class.html">PruningPointUtxoSetOverrideNotificationMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureResolveFinalityConflictResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureResolveFinalityConflictResponse.html">ensureResolveFinalityConflictResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/ResolveFinalityConflictResponseMessage-class.html">ResolveFinalityConflictResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureShutdownResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureShutdownResponse.html">ensureShutdownResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/ShutdownResponseMessage-class.html">ShutdownResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureSinkBlueScoreChangedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureSinkBlueScoreChangedNotification.html">ensureSinkBlueScoreChangedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/SinkBlueScoreChangedNotificationMessage-class.html">SinkBlueScoreChangedNotificationMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureStopNotifyingPruningPointUtxoSetOverrideResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureStopNotifyingPruningPointUtxoSetOverrideResponse.html">ensureStopNotifyingPruningPointUtxoSetOverrideResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/StopNotifyingPruningPointUtxoSetOverrideResponseMessage-class.html">StopNotifyingPruningPointUtxoSetOverrideResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureStopNotifyingUtxosChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureStopNotifyingUtxosChangedResponse.html">ensureStopNotifyingUtxosChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/StopNotifyingUtxosChangedResponseMessage-class.html">StopNotifyingUtxosChangedResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureSubmitBlockResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureSubmitBlockResponse.html">ensureSubmitBlockResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/SubmitBlockResponseMessage-class.html">SubmitBlockResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureSubmitTransactionReplacementResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureSubmitTransactionReplacementResponse.html">ensureSubmitTransactionReplacementResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/SubmitTransactionReplacementResponseMessage-class.html">SubmitTransactionReplacementResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureSubmitTransactionResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureSubmitTransactionResponse.html">ensureSubmitTransactionResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/SubmitTransactionResponseMessage-class.html">SubmitTransactionResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureUnbanResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureUnbanResponse.html">ensureUnbanResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/UnbanResponseMessage-class.html">UnbanResponseMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureUtxosChangedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureUtxosChangedNotification.html">ensureUtxosChangedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/UtxosChangedNotificationMessage-class.html">UtxosChangedNotificationMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureVirtualChainChangedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureVirtualChainChangedNotification.html">ensureVirtualChainChangedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/VirtualChainChangedNotificationMessage-class.html">VirtualChainChangedNotificationMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureVirtualDaaScoreChangedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/ensureVirtualDaaScoreChangedNotification.html">ensureVirtualDaaScoreChangedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/VirtualDaaScoreChangedNotificationMessage-class.html">VirtualDaaScoreChangedNotificationMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="extensionsAreInitialized" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/extensionsAreInitialized.html">extensionsAreInitialized</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="freeze" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/freeze.html">freeze</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage-class.html">GeneratedMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Make this message read-only.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="getDefaultForField" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/getDefaultForField.html">getDefaultForField</a></span><span class="signature">(<wbr><span class="parameter" id="getDefaultForField-param-tagNumber"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">tagNumber</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns the default value for the given field.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="getExtension" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/getExtension.html">getExtension</a></span><span class="signature">(<wbr><span class="parameter" id="getExtension-param-extension"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/Extension-class.html">Extension</a></span> <span class="parameter-name">extension</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns the value of <code>extension</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="getField" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/getField.html">getField</a></span><span class="signature">(<wbr><span class="parameter" id="getField-param-tagNumber"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">tagNumber</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns the value of the field associated with <code>tagNumber</code>, or the
+default value if it is not set.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="getFieldOrNull" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/getFieldOrNull.html">getFieldOrNull</a></span><span class="signature">(<wbr><span class="parameter" id="getFieldOrNull-param-tagNumber"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">tagNumber</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns the value of a field, ignoring any defaults.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="getTagNumber" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/getTagNumber.html">getTagNumber</a></span><span class="signature">(<wbr><span class="parameter" id="getTagNumber-param-fieldName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">fieldName</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="hasAddPeerResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasAddPeerResponse.html">hasAddPeerResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasBanResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasBanResponse.html">hasBanResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasBlockAddedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasBlockAddedNotification.html">hasBlockAddedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasEstimateNetworkHashesPerSecondResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasEstimateNetworkHashesPerSecondResponse.html">hasEstimateNetworkHashesPerSecondResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasExtension" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/hasExtension.html">hasExtension</a></span><span class="signature">(<wbr><span class="parameter" id="hasExtension-param-extension"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/Extension-class.html">Extension</a></span> <span class="parameter-name">extension</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns <code>true</code> if a value of <code>extension</code> is present.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="hasField" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/hasField.html">hasField</a></span><span class="signature">(<wbr><span class="parameter" id="hasField-param-tagNumber"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">tagNumber</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Whether this message has a field associated with <code>tagNumber</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="hasFinalityConflictNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasFinalityConflictNotification.html">hasFinalityConflictNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasFinalityConflictResolvedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasFinalityConflictResolvedNotification.html">hasFinalityConflictResolvedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetBalanceByAddressResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetBalanceByAddressResponse.html">hasGetBalanceByAddressResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetBalancesByAddressesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetBalancesByAddressesResponse.html">hasGetBalancesByAddressesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetBlockCountResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetBlockCountResponse.html">hasGetBlockCountResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetBlockDagInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetBlockDagInfoResponse.html">hasGetBlockDagInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetBlockResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetBlockResponse.html">hasGetBlockResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetBlocksResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetBlocksResponse.html">hasGetBlocksResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetBlockTemplateResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetBlockTemplateResponse.html">hasGetBlockTemplateResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetCoinSupplyResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetCoinSupplyResponse.html">hasGetCoinSupplyResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetConnectedPeerInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetConnectedPeerInfoResponse.html">hasGetConnectedPeerInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetConnectionsResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetConnectionsResponse.html">hasGetConnectionsResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetCurrentBlockColorResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetCurrentBlockColorResponse.html">hasGetCurrentBlockColorResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetCurrentNetworkResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetCurrentNetworkResponse.html">hasGetCurrentNetworkResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetDaaScoreTimestampEstimateResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetDaaScoreTimestampEstimateResponse.html">hasGetDaaScoreTimestampEstimateResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetFeeEstimateExperimentalResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetFeeEstimateExperimentalResponse.html">hasGetFeeEstimateExperimentalResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetFeeEstimateResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetFeeEstimateResponse.html">hasGetFeeEstimateResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetHeadersResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetHeadersResponse.html">hasGetHeadersResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetInfoResponse.html">hasGetInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetMempoolEntriesByAddressesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetMempoolEntriesByAddressesResponse.html">hasGetMempoolEntriesByAddressesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetMempoolEntriesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetMempoolEntriesResponse.html">hasGetMempoolEntriesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetMempoolEntryResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetMempoolEntryResponse.html">hasGetMempoolEntryResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetMetricsResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetMetricsResponse.html">hasGetMetricsResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetPeerAddressesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetPeerAddressesResponse.html">hasGetPeerAddressesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetServerInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetServerInfoResponse.html">hasGetServerInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetSinkBlueScoreResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetSinkBlueScoreResponse.html">hasGetSinkBlueScoreResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetSinkResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetSinkResponse.html">hasGetSinkResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetSubnetworkResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetSubnetworkResponse.html">hasGetSubnetworkResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetSyncStatusResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetSyncStatusResponse.html">hasGetSyncStatusResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetSystemInfoResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetSystemInfoResponse.html">hasGetSystemInfoResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetUtxosByAddressesResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetUtxosByAddressesResponse.html">hasGetUtxosByAddressesResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetVirtualChainFromBlockResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasGetVirtualChainFromBlockResponse.html">hasGetVirtualChainFromBlockResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasId" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasId.html">hasId</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNewBlockTemplateNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasNewBlockTemplateNotification.html">hasNewBlockTemplateNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyBlockAddedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasNotifyBlockAddedResponse.html">hasNotifyBlockAddedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyFinalityConflictResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasNotifyFinalityConflictResponse.html">hasNotifyFinalityConflictResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyNewBlockTemplateResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasNotifyNewBlockTemplateResponse.html">hasNotifyNewBlockTemplateResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyPruningPointUtxoSetOverrideResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasNotifyPruningPointUtxoSetOverrideResponse.html">hasNotifyPruningPointUtxoSetOverrideResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifySinkBlueScoreChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasNotifySinkBlueScoreChangedResponse.html">hasNotifySinkBlueScoreChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyUtxosChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasNotifyUtxosChangedResponse.html">hasNotifyUtxosChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyVirtualChainChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasNotifyVirtualChainChangedResponse.html">hasNotifyVirtualChainChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyVirtualDaaScoreChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasNotifyVirtualDaaScoreChangedResponse.html">hasNotifyVirtualDaaScoreChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasPingResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasPingResponse.html">hasPingResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasPruningPointUtxoSetOverrideNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasPruningPointUtxoSetOverrideNotification.html">hasPruningPointUtxoSetOverrideNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasRequiredFields" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/hasRequiredFields.html">hasRequiredFields</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Whether the message has required fields.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="hasResolveFinalityConflictResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasResolveFinalityConflictResponse.html">hasResolveFinalityConflictResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasShutdownResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasShutdownResponse.html">hasShutdownResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasSinkBlueScoreChangedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasSinkBlueScoreChangedNotification.html">hasSinkBlueScoreChangedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasStopNotifyingPruningPointUtxoSetOverrideResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasStopNotifyingPruningPointUtxoSetOverrideResponse.html">hasStopNotifyingPruningPointUtxoSetOverrideResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasStopNotifyingUtxosChangedResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasStopNotifyingUtxosChangedResponse.html">hasStopNotifyingUtxosChangedResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasSubmitBlockResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasSubmitBlockResponse.html">hasSubmitBlockResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasSubmitTransactionReplacementResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasSubmitTransactionReplacementResponse.html">hasSubmitTransactionReplacementResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasSubmitTransactionResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasSubmitTransactionResponse.html">hasSubmitTransactionResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasUnbanResponse" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasUnbanResponse.html">hasUnbanResponse</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasUtxosChangedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasUtxosChangedNotification.html">hasUtxosChangedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasVirtualChainChangedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasVirtualChainChangedNotification.html">hasVirtualChainChangedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasVirtualDaaScoreChangedNotification" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/hasVirtualDaaScoreChangedNotification.html">hasVirtualDaaScoreChangedNotification</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="isInitialized" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/isInitialized.html">isInitialized</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Whether all required fields in the message and embedded messages are set.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeFromBuffer" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromBuffer.html">mergeFromBuffer</a></span><span class="signature">(<wbr><span class="parameter" id="mergeFromBuffer-param-input"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> <span class="parameter-name">input</span>, [</span><span class="parameter" id="mergeFromBuffer-param-extensionRegistry"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/ExtensionRegistry-class.html">ExtensionRegistry</a></span> <span class="parameter-name">extensionRegistry</span> = <span class="default-value">ExtensionRegistry.EMPTY</span></span>])
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Merges serialized protocol buffer data into this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeFromCodedBufferReader" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromCodedBufferReader.html">mergeFromCodedBufferReader</a></span><span class="signature">(<wbr><span class="parameter" id="mergeFromCodedBufferReader-param-input"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/CodedBufferReader-class.html">CodedBufferReader</a></span> <span class="parameter-name">input</span>, [</span><span class="parameter" id="mergeFromCodedBufferReader-param-extensionRegistry"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/ExtensionRegistry-class.html">ExtensionRegistry</a></span> <span class="parameter-name">extensionRegistry</span> = <span class="default-value">ExtensionRegistry.EMPTY</span></span>])
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Same as <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromBuffer.html">mergeFromBuffer</a>, but takes a <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/CodedBufferReader-class.html">CodedBufferReader</a> input.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeFromJson" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromJson.html">mergeFromJson</a></span><span class="signature">(<wbr><span class="parameter" id="mergeFromJson-param-data"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">data</span>, [</span><span class="parameter" id="mergeFromJson-param-extensionRegistry"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/ExtensionRegistry-class.html">ExtensionRegistry</a></span> <span class="parameter-name">extensionRegistry</span> = <span class="default-value">ExtensionRegistry.EMPTY</span></span>])
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Merges field values from <code>data</code>, a JSON object, encoded as described by
+<a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/writeToJson.html">GeneratedMessage.writeToJson</a>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeFromJsonMap" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromJsonMap.html">mergeFromJsonMap</a></span><span class="signature">(<wbr><span class="parameter" id="mergeFromJsonMap-param-json"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">json</span>, [</span><span class="parameter" id="mergeFromJsonMap-param-extensionRegistry"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/ExtensionRegistry-class.html">ExtensionRegistry</a></span> <span class="parameter-name">extensionRegistry</span> = <span class="default-value">ExtensionRegistry.EMPTY</span></span>])
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Merges field values from a JSON object represented as a Dart map.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeFromMessage" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromMessage.html">mergeFromMessage</a></span><span class="signature">(<wbr><span class="parameter" id="mergeFromMessage-param-other"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage-class.html">GeneratedMessage</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Merges the contents of the <code>other</code> into this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeFromProto3Json" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromProto3Json.html">mergeFromProto3Json</a></span><span class="signature">(<wbr><span class="parameter" id="mergeFromProto3Json-param-json"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a>?</span> <span class="parameter-name">json</span>, {</span><span class="parameter" id="mergeFromProto3Json-param-typeRegistry"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/TypeRegistry-class.html">TypeRegistry</a></span> <span class="parameter-name">typeRegistry</span> = <span class="default-value">const TypeRegistry.empty()</span>, </span><span class="parameter" id="mergeFromProto3Json-param-ignoreUnknownFields"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">ignoreUnknownFields</span> = <span class="default-value">false</span>, </span><span class="parameter" id="mergeFromProto3Json-param-supportNamesWithUnderscores"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">supportNamesWithUnderscores</span> = <span class="default-value">true</span>, </span><span class="parameter" id="mergeFromProto3Json-param-permissiveEnums"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">permissiveEnums</span> = <span class="default-value">false</span></span>})
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Merges field values from <code>json</code>, a JSON object using proto3 encoding.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeUnknownFields" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeUnknownFields.html">mergeUnknownFields</a></span><span class="signature">(<wbr><span class="parameter" id="mergeUnknownFields-param-unknownFieldSet"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/UnknownFieldSet-class.html">UnknownFieldSet</a></span> <span class="parameter-name">unknownFieldSet</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a nonexistent method or property is accessed.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="rebuild" class="callable">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessageGenericExtensions/rebuild.html">rebuild</a></span><span class="signature">(<wbr><span class="parameter" id="rebuild-param-updates"><span class="type-annotation">void</span> <span class="parameter-name">updates</span>(<span class="parameter" id="param-"><span class="type-annotation">T</span></span>)</span>)
+    <span class="returntype parameter">&#8594; T</span>
+  </span>
+  
+
+</dt>
+<dd>
+      <p class="from-extension">
+        <span>Available on T,
+        provided by the <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessageGenericExtensions.html">GeneratedMessageGenericExtensions</a> extension</span>
+      </p>
+  Apply <code>updates</code> to a copy of this message.
+  
+
+</dd>
+
+        <dt id="setExtension" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/setExtension.html">setExtension</a></span><span class="signature">(<wbr><span class="parameter" id="setExtension-param-extension"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/Extension-class.html">Extension</a></span> <span class="parameter-name">extension</span>, </span><span class="parameter" id="setExtension-param-value"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">value</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Sets the value of a non-repeated extension field to <code>value</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="setField" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/setField.html">setField</a></span><span class="signature">(<wbr><span class="parameter" id="setField-param-tagNumber"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">tagNumber</span>, </span><span class="parameter" id="setField-param-value"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">value</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Sets the value of a field by its <code>tagNumber</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toBuilder" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/toBuilder.html">toBuilder</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage-class.html">GeneratedMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Creates a writable, shallow copy of this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toDebugString" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/toDebugString.html">toDebugString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> representation of this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toProto3Json" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/toProto3Json.html">toProto3Json</a></span><span class="signature">(<wbr>{<span class="parameter" id="toProto3Json-param-typeRegistry"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/TypeRegistry-class.html">TypeRegistry</a></span> <span class="parameter-name">typeRegistry</span> = <span class="default-value">const TypeRegistry.empty()</span></span>})
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a>?</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns an Object representing Proto3 JSON serialization of <code>this</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> representation of this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="whichPayload" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/whichPayload.html">whichPayload</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_messages.pb/KaspadResponse_Payload.html">KaspadResponse_Payload</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="writeToBuffer" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/writeToBuffer.html">writeToBuffer</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Serialize the message as the protobuf binary format.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="writeToCodedBufferWriter" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/writeToCodedBufferWriter.html">writeToCodedBufferWriter</a></span><span class="signature">(<wbr><span class="parameter" id="writeToCodedBufferWriter-param-output"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/CodedBufferWriter-class.html">CodedBufferWriter</a></span> <span class="parameter-name">output</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Same as <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/writeToBuffer.html">writeToBuffer</a>, but serializes to the given <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/CodedBufferWriter-class.html">CodedBufferWriter</a>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="writeToJson" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/writeToJson.html">writeToJson</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a JSON string that encodes this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="writeToJsonMap" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/writeToJsonMap.html">writeToJsonMap</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns the JSON encoding of this message as a Dart <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+  <section class="summary offset-anchor" id="static-methods">
+    <h2>Static Methods</h2>
+    <dl class="callables">
+        <dt id="create" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/create.html">create</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_messages.pb/KaspadResponse-class.html">KaspadResponse</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="createRepeated" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/createRepeated.html">createRepeated</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/PbList-class.html">PbList</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../kaspa_grpc_messages.pb/KaspadResponse-class.html">KaspadResponse</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="getDefault" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadResponse/getDefault.html">getDefault</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_messages.pb/KaspadResponse-class.html">KaspadResponse</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+    </dl>
+  </section>
+    
+
+  </div> <!-- /.main-content -->
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../index.html">kaspa_flutter_core</a></li>
+    <li><a href="../kaspa_grpc_messages.pb/">messages.pb</a></li>
+    <li class="self-crumb">KaspadResponse class</li>
+</ol>
+
+    <h5>messages.pb library</h5>
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div>
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+</main>
+<footer>
+  <span class="no-break">
+    kaspa_flutter_core
+      0.1.0
+  </span>
+  
+</footer>
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+

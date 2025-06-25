@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="kaspa_flutter_core API docs, for the Dart programming language.">
+  <title>kaspa_flutter_core - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="https://github.com/kasanova/kaspa_flutter_core">kaspa_flutter_core package</a></li>
+  </ol>
+  <div class="self-name">kaspa_flutter_core</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <button class="toggle" id="theme-button" title="Toggle between light and dark mode" aria-label="Light and dark mode toggle">
+    <span id="dark-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      dark_mode
+    </span>
+    <span id="light-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      light_mode
+    </span>
+  </button>
+</header>
+<main>
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 id="kaspa_flutter_core">kaspa_flutter_core</h1>
+<p>A <strong>pure-Dart</strong> core library for building Kaspa wallets and applications in Flutter.<br>
+Provides all on-chain wallet logic, BIP-standards, address/transaction encoding, protocol buffers/gRPC bindings, and utilities—<strong>without any UI or platform-specific code</strong>.</p>
+<p>Forked from <a href="https://github.com/azbuky/kaspium_wallet">Kaspium</a></p>
+<hr>
+<h2 id="-features">📦 Features</h2>
+<ul>
+<li>
+<p><strong>BIP-Standards</strong></p>
+<ul>
+<li>BIP-32 hierarchical deterministic wallets (key derivation)</li>
+<li>BIP-39 mnemonic generation &amp; seed derivation</li>
+<li>BIP-340 Schnorr signature utilities</li>
+</ul>
+</li>
+<li>
+<p><strong>Address Encoding</strong></p>
+<ul>
+<li>Kaspa Bech32 address codec (<code>kaspa:</code> HRP)</li>
+<li>Base58Check support</li>
+</ul>
+</li>
+<li>
+<p><strong>Transaction Construction &amp; Validation</strong></p>
+<ul>
+<li>UTXO mass calculation (KIP-9)</li>
+<li>Raw-tx builder &amp; fee estimation</li>
+<li>Script / TxScript helper functions</li>
+</ul>
+</li>
+<li>
+<p><strong>Protocol Bindings</strong></p>
+<ul>
+<li>Protobuf messages &amp; JSON/gRPC stubs generated from <code>proto/</code></li>
+<li>High-level async <code>KaspaClient</code> for both gRPC and JSON-RPC</li>
+</ul>
+</li>
+<li>
+<p><strong>Utilities</strong></p>
+<ul>
+<li>Currency conversion (KAS ↔ SOMPI)</li>
+<li>URI parsing (<code>kaspa:</code> URI scheme)</li>
+<li>Big-number formatting &amp; parsing</li>
+</ul>
+</li>
+<li>
+<p><strong>Pure Dart</strong><br>
+No native or platform channels—ideal for <strong>both</strong> Flutter and standalone Dart VM use.</p>
+</li>
+</ul>
+<hr>
+<h2 id="-installation">🚀 Installation</h2>
+<p>Add to your app or package’s <code>pubspec.yaml</code>:</p>
+<pre class="language-yaml"><code class="language-yaml">dependencies:
+  kaspa_flutter_core: ^0.1.0
+</code></pre>
+<p>Then run:</p>
+<pre class="language-bash"><code class="language-bash">flutter pub get
+# or, for pure Dart:
+dart pub get
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> There are no Flutter widget dependencies—only Dart SDK and pure-Dart libraries.</p>
+</blockquote>
+<hr>
+<h2 id="-quick-start">⚡ Quick Start</h2>
+<pre class="language-dart"><code class="language-dart">import 'dart:convert';
+import 'package:hex/hex.dart';
+import 'package:kaspa_flutter_core/kaspa/bip39/bip39.dart';
+import 'package:kaspa_flutter_core/kaspa/bip32/bip32.dart';
+import 'package:kaspa_flutter_core/kaspa/types/address.dart';
+import 'package:kaspa_flutter_core/client/kaspa_client.dart';
+
+void main() async {
+  // 1. Generate a new 12-word mnemonic
+  final mnemonic = generateMnemonic(strength: 128);
+  print('Mnemonic: \$mnemonic');
+
+  // 2. Derive seed &amp; master key
+  final seedHex = mnemonicToSeedHex(mnemonic, passphrase: '');
+  final seedBytes = HEX.decode(seedHex);
+  final masterKey = BIP32.fromSeed(Uint8List.fromList(seedBytes));
+
+  // 3. Derive an address
+  final child = masterKey.derivePath("m/44'/1234'/0'/0/0");
+  final address = Address.publicKey(child.publicKey).toString();
+  print('Kaspa address: \$address');
+
+  // 4. Query balance via JSON-RPC
+  final client = KaspaClient.jsonRpc('http://localhost:16210');
+  final balance = await client.getBalance(address);
+  print('Balance: \${balance.kaspa} KAS (~\${balance.sompi} sompi)');
+}
+</code></pre>
+<hr>
+<h2 id="-api-overview">📚 API Overview</h2>
+<h3 id="wallet--key-management">Wallet &amp; Key Management</h3>
+<ul>
+<li>
+<p><strong>BIP-39</strong></p>
+<ul>
+<li><code>generateMnemonic({int strength = 128})</code></li>
+<li><code>validateMnemonic(String phrase)</code></li>
+<li><code>mnemonicToSeedHex(String phrase, {String passphrase = ''})</code></li>
+</ul>
+</li>
+<li>
+<p><strong>BIP-32</strong></p>
+<ul>
+<li><code>BIP32.fromSeed(Uint8List seed)</code></li>
+<li><code>derivePath(String path)</code></li>
+<li><code>toBase58()</code> / <code>BIP32.fromBase58(String)</code></li>
+</ul>
+</li>
+<li>
+<p><strong>BIP-340</strong></p>
+<ul>
+<li><code>signSchnorr(Uint8List msg, Uint8List privKey)</code></li>
+<li><code>verifySchnorr(Uint8List msg, Uint8List signature, Uint8List pubKey)</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="address--encoding">Address &amp; Encoding</h3>
+<ul>
+<li>
+<p><strong>Bech32</strong></p>
+<ul>
+<li><code>Bech32.encode(String hrp, Uint8List data)</code></li>
+<li><code>Bech32.decode(String address) → Bech32Data(hrp, data)</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Base58Check</strong></p>
+<ul>
+<li><code>bs58check.encode(Uint8List payload)</code></li>
+<li><code>bs58check.decode(String address) → Uint8List</code></li>
+</ul>
+</li>
+<li>
+<p><strong>URI Parsing</strong></p>
+<ul>
+<li><code>KaspaUri.tryParse(String uri, {AddressPrefix prefix})</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="transactions">Transactions</h3>
+<ul>
+<li>
+<p><strong>Mass Calculation</strong></p>
+<ul>
+<li><code>MassCalculator.compute(List&lt;Uint8List&gt; inputs, List&lt;BigInt&gt; outputs, int version)</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Builder &amp; Scripts</strong></p>
+<ul>
+<li><code>TransactionBuilder.build(...)</code></li>
+<li><code>TxScript</code> helper functions</li>
+</ul>
+</li>
+</ul>
+<h3 id="rpc--grpc-clients">RPC &amp; gRPC Clients</h3>
+<ul>
+<li>
+<p><strong>gRPC</strong> (<code>grpc</code> package)</p>
+<ul>
+<li><code>KaspaGrpcClient</code> with methods like <code>getBlockCount()</code>, <code>getRecentBlocks()</code>, etc.</li>
+</ul>
+</li>
+<li>
+<p><strong>JSON-RPC</strong> (<code>http</code> package)</p>
+<ul>
+<li><code>KaspaJsonRpcClient</code> for HTTP-based JSON-RPC calls</li>
+</ul>
+</li>
+</ul>
+<p>Both clients share Protobuf models under <code>lib/kaspa/grpc/</code> and <code>lib/kaspa/rpc/</code>.</p>
+<hr>
+<h2 id="-testing">🧪 Testing</h2>
+<p>All core logic is covered by <strong>pure-Dart</strong> unit tests:</p>
+<pre class="language-bash"><code class="language-bash">dart test
+</code></pre>
+<p>Test suites under <code>test/</code> cover:</p>
+<ul>
+<li>BIP-standards (bip32, bip39, bip340)</li>
+<li>Address encoding (bech32, bs58check)</li>
+<li>Transaction mass &amp; builder</li>
+<li>URI parsing, serialization, utilities</li>
+</ul>
+<hr>
+<h2 id="-code-generation">🔧 Code Generation</h2>
+<ol>
+<li>
+<p><strong>Protobuf / gRPC</strong><br>
+Install <a href="https://buf.build/">buf</a> and the Dart plugin:</p>
+<pre class="language-bash"><code class="language-bash">brew install bufbuild/buf/buf  
+dart pub global activate protoc_plugin
+</code></pre>
+<p>Then:</p>
+<pre class="language-bash"><code class="language-bash">buf generate
+</code></pre>
+</li>
+<li>
+<p><strong>Freezed &amp; JSON Serialization</strong><br>
+(Only if you modify <code>.freezed.dart</code> or <code>.g.dart</code> models)</p>
+<pre class="language-bash"><code class="language-bash">dart run build_runner build --delete-conflicting-outputs
+</code></pre>
+</li>
+</ol>
+<hr>
+<h2 id="-contributing">🤝 Contributing</h2>
+<ol>
+<li><strong>Fork</strong> the repo</li>
+<li>Create a <strong>feature branch</strong></li>
+<li>Write code &amp; <strong>unit tests</strong></li>
+<li>Open a <strong>PR</strong> and ensure <code>dart test</code> passes</li>
+</ol>
+<p>Please follow code style and add tests for new logic.</p>
+<hr>
+<p>Happy hacking! 🚀</p>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="bech32">
+  <span class="name"><a href="kaspa_bech32_bech32/">kaspa/bech32/bech32</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="converter">
+  <span class="name"><a href="kaspa_bech32_converter/">kaspa/bech32/converter</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="exceptions">
+  <span class="name"><a href="kaspa_bech32_exceptions/">kaspa/bech32/exceptions</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="bip32">
+  <span class="name"><a href="kaspa_bip32_bip32/">kaspa/bip32/bip32</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="bip32_base">
+  <span class="name"><a href="kaspa_bip32_src_bip32_base/">kaspa/bip32/src/bip32_base</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="bip32_kdx">
+  <span class="name"><a href="kaspa_bip32_src_bip32_kdx/">kaspa/bip32/src/bip32_kdx</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="bip32_type">
+  <span class="name"><a href="kaspa_bip32_src_models_bip32_type/">kaspa/bip32/src/models/bip32_type</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="networks">
+  <span class="name"><a href="kaspa_bip32_src_models_networks/">kaspa/bip32/src/models/networks</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="crypto">
+  <span class="name"><a href="kaspa_bip32_src_utils_crypto/">kaspa/bip32/src/utils/crypto</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="ecurve">
+  <span class="name"><a href="kaspa_bip32_src_utils_ecurve/">kaspa/bip32/src/utils/ecurve</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="bip39">
+  <span class="name"><a href="kaspa_bip39_bip39/">kaspa/bip39/bip39</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="bip39_base">
+  <span class="name"><a href="kaspa_bip39_src_bip39_base/">kaspa/bip39/src/bip39_base</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="pbkdf2">
+  <span class="name"><a href="kaspa_bip39_src_utils_pbkdf2/">kaspa/bip39/src/utils/pbkdf2</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="english">
+  <span class="name"><a href="kaspa_bip39_src_wordlists_english/">kaspa/bip39/src/wordlists/english</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="bip340">
+  <span class="name"><a href="kaspa_bip340_bip340/">kaspa/bip340/bip340</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="bip340">
+  <span class="name"><a href="kaspa_bip340_src_bip340/">kaspa/bip340/src/bip340</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="helpers">
+  <span class="name"><a href="kaspa_bip340_src_helpers/">kaspa/bip340/src/helpers</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="bs58check">
+  <span class="name"><a href="kaspa_bs58check_bs58check/">kaspa/bs58check/bs58check</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="bs58check_base">
+  <span class="name"><a href="kaspa_bs58check_src_bs58check_base/">kaspa/bs58check/src/bs58check_base</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="base">
+  <span class="name"><a href="kaspa_bs58check_src_utils_base/">kaspa/bs58check/src/utils/base</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="kaspa_client">
+  <span class="name"><a href="kaspa_client_kaspa_client/">kaspa/client/kaspa_client</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="messages.pb">
+  <span class="name"><a href="kaspa_grpc_messages.pb/">kaspa/grpc/messages.pb</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="messages.pbenum">
+  <span class="name"><a href="kaspa_grpc_messages.pbenum/">kaspa/grpc/messages.pbenum</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="messages.pbgrpc">
+  <span class="name"><a href="kaspa_grpc_messages.pbgrpc/">kaspa/grpc/messages.pbgrpc</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="messages.pbjson">
+  <span class="name"><a href="kaspa_grpc_messages.pbjson/">kaspa/grpc/messages.pbjson</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="rpc.pb">
+  <span class="name"><a href="kaspa_grpc_rpc.pb/">kaspa/grpc/rpc.pb</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="rpc.pbenum">
+  <span class="name"><a href="kaspa_grpc_rpc.pbenum/">kaspa/grpc/rpc.pbenum</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="rpc.pbjson">
+  <span class="name"><a href="kaspa_grpc_rpc.pbjson/">kaspa/grpc/rpc.pbjson</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="kaspa">
+  <span class="name"><a href="kaspa_kaspa/">kaspa/kaspa</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="kaspa_api">
+  <span class="name"><a href="kaspa_kaspa_api/">kaspa/kaspa_api</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="kaspa_api">
+  <span class="name"><a href="kaspa_kaspa_api_kaspa_api/">kaspa/kaspa_api/kaspa_api</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="kaspa_api_base">
+  <span class="name"><a href="kaspa_kaspa_api_kaspa_api_base/">kaspa/kaspa_api/kaspa_api_base</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="kaspa_api_empty">
+  <span class="name"><a href="kaspa_kaspa_api_kaspa_api_empty/">kaspa/kaspa_api/kaspa_api_empty</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="kaspa_api_mainnet">
+  <span class="name"><a href="kaspa_kaspa_api_kaspa_api_mainnet/">kaspa/kaspa_api/kaspa_api_mainnet</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="kaspa_api_service">
+  <span class="name"><a href="kaspa_kaspa_api_kaspa_api_service/">kaspa/kaspa_api/kaspa_api_service</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="types">
+  <span class="name"><a href="kaspa_kaspa_api_types/">kaspa/kaspa_api/types</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="kaspa_client">
+  <span class="name"><a href="kaspa_kaspa_client/">kaspa/kaspa_client</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="network">
+  <span class="name"><a href="kaspa_network/">kaspa/network</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="transaction">
+  <span class="name"><a href="kaspa_transaction/">kaspa/transaction</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="mass_calculator">
+  <span class="name"><a href="kaspa_transaction_mass_calculator/">kaspa/transaction/mass_calculator</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="transaction_builder">
+  <span class="name"><a href="kaspa_transaction_transaction_builder/">kaspa/transaction/transaction_builder</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="transaction_util">
+  <span class="name"><a href="kaspa_transaction_transaction_util/">kaspa/transaction/transaction_util</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="txscript">
+  <span class="name"><a href="kaspa_transaction_txscript/">kaspa/transaction/txscript</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="types">
+  <span class="name"><a href="kaspa_transaction_types/">kaspa/transaction/types</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="types">
+  <span class="name"><a href="kaspa_types/">kaspa/types</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="address">
+  <span class="name"><a href="kaspa_types_address/">kaspa/types/address</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="address_balance">
+  <span class="name"><a href="kaspa_types_address_balance/">kaspa/types/address_balance</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="address_prefix">
+  <span class="name"><a href="kaspa_types_address_prefix/">kaspa/types/address_prefix</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="amount">
+  <span class="name"><a href="kaspa_types_amount/">kaspa/types/amount</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="kaspa_uri">
+  <span class="name"><a href="kaspa_types_kaspa_uri/">kaspa/types/kaspa_uri</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="token_info">
+  <span class="name"><a href="kaspa_types_token_info/">kaspa/types/token_info</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="utils">
+  <span class="name"><a href="kaspa_utils/">kaspa/utils</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="wallet_service">
+  <span class="name"><a href="kaspa_wallet_service/">kaspa/wallet_service</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="address_generator">
+  <span class="name"><a href="kaspa_wallet_service_address_generator/">kaspa/wallet_service/address_generator</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="send_tx">
+  <span class="name"><a href="kaspa_wallet_service_send_tx/">kaspa/wallet_service/send_tx</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="signer_base">
+  <span class="name"><a href="kaspa_wallet_service_signer_base/">kaspa/wallet_service/signer_base</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="wallet">
+  <span class="name"><a href="kaspa_wallet_service_wallet/">kaspa/wallet_service/wallet</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="wallet_service">
+  <span class="name"><a href="kaspa_wallet_service_wallet_service/">kaspa/wallet_service/wallet_service</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="kaspa_flutter_core">
+  <span class="name"><a href="kaspa_flutter_core/">kaspa_flutter_core</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="numberutil">
+  <span class="name"><a href="util_numberutil/">util/numberutil</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+        </dl>
+      </section>
+  </div> <!-- /.main-content -->
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="https://github.com/kasanova/kaspa_flutter_core">kaspa_flutter_core package</a></li>
+</ol>
+
+    <h5 class="hidden-xs"><span class="package-name">kaspa_flutter_core</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="kaspa_bech32_bech32/">kaspa/bech32/bech32</a></li>
+      <li><a href="kaspa_bech32_converter/">kaspa/bech32/converter</a></li>
+      <li><a href="kaspa_bech32_exceptions/">kaspa/bech32/exceptions</a></li>
+      <li><a href="kaspa_bip32_bip32/">kaspa/bip32/bip32</a></li>
+      <li><a href="kaspa_bip32_src_bip32_base/">kaspa/bip32/src/bip32_base</a></li>
+      <li><a href="kaspa_bip32_src_bip32_kdx/">kaspa/bip32/src/bip32_kdx</a></li>
+      <li><a href="kaspa_bip32_src_models_bip32_type/">kaspa/bip32/src/models/bip32_type</a></li>
+      <li><a href="kaspa_bip32_src_models_networks/">kaspa/bip32/src/models/networks</a></li>
+      <li><a href="kaspa_bip32_src_utils_crypto/">kaspa/bip32/src/utils/crypto</a></li>
+      <li><a href="kaspa_bip32_src_utils_ecurve/">kaspa/bip32/src/utils/ecurve</a></li>
+      <li><a href="kaspa_bip39_bip39/">kaspa/bip39/bip39</a></li>
+      <li><a href="kaspa_bip39_src_bip39_base/">kaspa/bip39/src/bip39_base</a></li>
+      <li><a href="kaspa_bip39_src_utils_pbkdf2/">kaspa/bip39/src/utils/pbkdf2</a></li>
+      <li><a href="kaspa_bip39_src_wordlists_english/">kaspa/bip39/src/wordlists/english</a></li>
+      <li><a href="kaspa_bip340_bip340/">kaspa/bip340/bip340</a></li>
+      <li><a href="kaspa_bip340_src_bip340/">kaspa/bip340/src/bip340</a></li>
+      <li><a href="kaspa_bip340_src_helpers/">kaspa/bip340/src/helpers</a></li>
+      <li><a href="kaspa_bs58check_bs58check/">kaspa/bs58check/bs58check</a></li>
+      <li><a href="kaspa_bs58check_src_bs58check_base/">kaspa/bs58check/src/bs58check_base</a></li>
+      <li><a href="kaspa_bs58check_src_utils_base/">kaspa/bs58check/src/utils/base</a></li>
+      <li><a href="kaspa_client_kaspa_client/">kaspa/client/kaspa_client</a></li>
+      <li><a href="kaspa_grpc_messages.pb/">kaspa/grpc/messages.pb</a></li>
+      <li><a href="kaspa_grpc_messages.pbenum/">kaspa/grpc/messages.pbenum</a></li>
+      <li><a href="kaspa_grpc_messages.pbgrpc/">kaspa/grpc/messages.pbgrpc</a></li>
+      <li><a href="kaspa_grpc_messages.pbjson/">kaspa/grpc/messages.pbjson</a></li>
+      <li><a href="kaspa_grpc_rpc.pb/">kaspa/grpc/rpc.pb</a></li>
+      <li><a href="kaspa_grpc_rpc.pbenum/">kaspa/grpc/rpc.pbenum</a></li>
+      <li><a href="kaspa_grpc_rpc.pbjson/">kaspa/grpc/rpc.pbjson</a></li>
+      <li><a href="kaspa_kaspa/">kaspa/kaspa</a></li>
+      <li><a href="kaspa_kaspa_api/">kaspa/kaspa_api</a></li>
+      <li><a href="kaspa_kaspa_api_kaspa_api/">kaspa/kaspa_api/kaspa_api</a></li>
+      <li><a href="kaspa_kaspa_api_kaspa_api_base/">kaspa/kaspa_api/kaspa_api_base</a></li>
+      <li><a href="kaspa_kaspa_api_kaspa_api_empty/">kaspa/kaspa_api/kaspa_api_empty</a></li>
+      <li><a href="kaspa_kaspa_api_kaspa_api_mainnet/">kaspa/kaspa_api/kaspa_api_mainnet</a></li>
+      <li><a href="kaspa_kaspa_api_kaspa_api_service/">kaspa/kaspa_api/kaspa_api_service</a></li>
+      <li><a href="kaspa_kaspa_api_types/">kaspa/kaspa_api/types</a></li>
+      <li><a href="kaspa_kaspa_client/">kaspa/kaspa_client</a></li>
+      <li><a href="kaspa_network/">kaspa/network</a></li>
+      <li><a href="kaspa_transaction/">kaspa/transaction</a></li>
+      <li><a href="kaspa_transaction_mass_calculator/">kaspa/transaction/mass_calculator</a></li>
+      <li><a href="kaspa_transaction_transaction_builder/">kaspa/transaction/transaction_builder</a></li>
+      <li><a href="kaspa_transaction_transaction_util/">kaspa/transaction/transaction_util</a></li>
+      <li><a href="kaspa_transaction_txscript/">kaspa/transaction/txscript</a></li>
+      <li><a href="kaspa_transaction_types/">kaspa/transaction/types</a></li>
+      <li><a href="kaspa_types/">kaspa/types</a></li>
+      <li><a href="kaspa_types_address/">kaspa/types/address</a></li>
+      <li><a href="kaspa_types_address_balance/">kaspa/types/address_balance</a></li>
+      <li><a href="kaspa_types_address_prefix/">kaspa/types/address_prefix</a></li>
+      <li><a href="kaspa_types_amount/">kaspa/types/amount</a></li>
+      <li><a href="kaspa_types_kaspa_uri/">kaspa/types/kaspa_uri</a></li>
+      <li><a href="kaspa_types_token_info/">kaspa/types/token_info</a></li>
+      <li><a href="kaspa_utils/">kaspa/utils</a></li>
+      <li><a href="kaspa_wallet_service/">kaspa/wallet_service</a></li>
+      <li><a href="kaspa_wallet_service_address_generator/">kaspa/wallet_service/address_generator</a></li>
+      <li><a href="kaspa_wallet_service_send_tx/">kaspa/wallet_service/send_tx</a></li>
+      <li><a href="kaspa_wallet_service_signer_base/">kaspa/wallet_service/signer_base</a></li>
+      <li><a href="kaspa_wallet_service_wallet/">kaspa/wallet_service/wallet</a></li>
+      <li><a href="kaspa_wallet_service_wallet_service/">kaspa/wallet_service/wallet_service</a></li>
+      <li><a href="kaspa_flutter_core/">kaspa_flutter_core</a></li>
+      <li><a href="util_numberutil/">util/numberutil</a></li>
+</ol>
+
+  </div>
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+</main>
+<footer>
+  <span class="no-break">
+    kaspa_flutter_core
+      0.1.0
+  </span>
+  
+</footer>
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+

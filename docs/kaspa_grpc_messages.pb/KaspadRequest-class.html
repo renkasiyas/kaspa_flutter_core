@@ -1,0 +1,3425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the KaspadRequest class from the messages.pb library, for the Dart programming language.">
+  <title>KaspadRequest class - messages.pb library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">kaspa_flutter_core</a></li>
+    <li><a href="../kaspa_grpc_messages.pb/">kaspa&#47;grpc&#47;messages.pb.dart</a></li>
+    <li class="self-crumb">KaspadRequest class</li>
+  </ol>
+  <div class="self-name">KaspadRequest</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <button class="toggle" id="theme-button" title="Toggle between light and dark mode" aria-label="Light and dark mode toggle">
+    <span id="dark-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      dark_mode
+    </span>
+    <span id="light-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      light_mode
+    </span>
+  </button>
+</header>
+<main>
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="kaspa_grpc_messages.pb&#47;kaspa_grpc_messages.pb-library-sidebar.html"
+    data-below-sidebar="kaspa_grpc_messages.pb&#47;KaspadRequest-class-sidebar.html">
+    <div>
+<h1><span class="kind-class">KaspadRequest</span> class 
+ 
+</h1></div>
+
+    
+
+
+    <section>
+      <dl class="dl-horizontal">
+        
+  <dt>Inheritance</dt>
+  <dd>
+    <ul class="gt-separated dark clazz-relationships">
+      <li><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></li>
+        <li><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage-class.html">GeneratedMessage</a></li>
+      <li>KaspadRequest</li>
+    </ul>
+  </dd>
+
+        
+        
+
+
+        
+  <dt>Available extensions</dt>
+  <dd><ul class="comma-separated clazz-relationships">
+      <li><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessageGenericExtensions.html">GeneratedMessageGenericExtensions</a></li>
+  </ul></dd>
+        
+
+
+      </dl>
+    </section>
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+    <dl class="constructor-summary-list">
+        <dt id="KaspadRequest.new" class="callable">
+          <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/KaspadRequest.html">KaspadRequest.new</a></span><span class="signature">({<span class="parameter" id="-param-id"><span class="type-annotation"><a href="https://pub.dev/documentation/fixnum/1.1.1/fixnum/Int64-class.html">Int64</a>?</span> <span class="parameter-name">id</span>, </span><span class="parameter" id="-param-getCurrentNetworkRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetCurrentNetworkRequestMessage-class.html">GetCurrentNetworkRequestMessage</a>?</span> <span class="parameter-name">getCurrentNetworkRequest</span>, </span><span class="parameter" id="-param-submitBlockRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/SubmitBlockRequestMessage-class.html">SubmitBlockRequestMessage</a>?</span> <span class="parameter-name">submitBlockRequest</span>, </span><span class="parameter" id="-param-getBlockTemplateRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBlockTemplateRequestMessage-class.html">GetBlockTemplateRequestMessage</a>?</span> <span class="parameter-name">getBlockTemplateRequest</span>, </span><span class="parameter" id="-param-notifyBlockAddedRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyBlockAddedRequestMessage-class.html">NotifyBlockAddedRequestMessage</a>?</span> <span class="parameter-name">notifyBlockAddedRequest</span>, </span><span class="parameter" id="-param-getPeerAddressesRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetPeerAddressesRequestMessage-class.html">GetPeerAddressesRequestMessage</a>?</span> <span class="parameter-name">getPeerAddressesRequest</span>, </span><span class="parameter" id="-param-getSinkRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetSinkRequestMessage-class.html">GetSinkRequestMessage</a>?</span> <span class="parameter-name">getSinkRequest</span>, </span><span class="parameter" id="-param-getMempoolEntryRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetMempoolEntryRequestMessage-class.html">GetMempoolEntryRequestMessage</a>?</span> <span class="parameter-name">getMempoolEntryRequest</span>, </span><span class="parameter" id="-param-getConnectedPeerInfoRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetConnectedPeerInfoRequestMessage-class.html">GetConnectedPeerInfoRequestMessage</a>?</span> <span class="parameter-name">getConnectedPeerInfoRequest</span>, </span><span class="parameter" id="-param-addPeerRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/AddPeerRequestMessage-class.html">AddPeerRequestMessage</a>?</span> <span class="parameter-name">addPeerRequest</span>, </span><span class="parameter" id="-param-submitTransactionRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/SubmitTransactionRequestMessage-class.html">SubmitTransactionRequestMessage</a>?</span> <span class="parameter-name">submitTransactionRequest</span>, </span><span class="parameter" id="-param-notifyVirtualChainChangedRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyVirtualChainChangedRequestMessage-class.html">NotifyVirtualChainChangedRequestMessage</a>?</span> <span class="parameter-name">notifyVirtualChainChangedRequest</span>, </span><span class="parameter" id="-param-getBlockRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBlockRequestMessage-class.html">GetBlockRequestMessage</a>?</span> <span class="parameter-name">getBlockRequest</span>, </span><span class="parameter" id="-param-getSubnetworkRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetSubnetworkRequestMessage-class.html">GetSubnetworkRequestMessage</a>?</span> <span class="parameter-name">getSubnetworkRequest</span>, </span><span class="parameter" id="-param-getVirtualChainFromBlockRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetVirtualChainFromBlockRequestMessage-class.html">GetVirtualChainFromBlockRequestMessage</a>?</span> <span class="parameter-name">getVirtualChainFromBlockRequest</span>, </span><span class="parameter" id="-param-getBlocksRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBlocksRequestMessage-class.html">GetBlocksRequestMessage</a>?</span> <span class="parameter-name">getBlocksRequest</span>, </span><span class="parameter" id="-param-getBlockCountRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBlockCountRequestMessage-class.html">GetBlockCountRequestMessage</a>?</span> <span class="parameter-name">getBlockCountRequest</span>, </span><span class="parameter" id="-param-getBlockDagInfoRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBlockDagInfoRequestMessage-class.html">GetBlockDagInfoRequestMessage</a>?</span> <span class="parameter-name">getBlockDagInfoRequest</span>, </span><span class="parameter" id="-param-resolveFinalityConflictRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/ResolveFinalityConflictRequestMessage-class.html">ResolveFinalityConflictRequestMessage</a>?</span> <span class="parameter-name">resolveFinalityConflictRequest</span>, </span><span class="parameter" id="-param-notifyFinalityConflictRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyFinalityConflictRequestMessage-class.html">NotifyFinalityConflictRequestMessage</a>?</span> <span class="parameter-name">notifyFinalityConflictRequest</span>, </span><span class="parameter" id="-param-getMempoolEntriesRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetMempoolEntriesRequestMessage-class.html">GetMempoolEntriesRequestMessage</a>?</span> <span class="parameter-name">getMempoolEntriesRequest</span>, </span><span class="parameter" id="-param-shutdownRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/ShutdownRequestMessage-class.html">ShutdownRequestMessage</a>?</span> <span class="parameter-name">shutdownRequest</span>, </span><span class="parameter" id="-param-getHeadersRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetHeadersRequestMessage-class.html">GetHeadersRequestMessage</a>?</span> <span class="parameter-name">getHeadersRequest</span>, </span><span class="parameter" id="-param-notifyUtxosChangedRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyUtxosChangedRequestMessage-class.html">NotifyUtxosChangedRequestMessage</a>?</span> <span class="parameter-name">notifyUtxosChangedRequest</span>, </span><span class="parameter" id="-param-getUtxosByAddressesRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetUtxosByAddressesRequestMessage-class.html">GetUtxosByAddressesRequestMessage</a>?</span> <span class="parameter-name">getUtxosByAddressesRequest</span>, </span><span class="parameter" id="-param-getSinkBlueScoreRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetSinkBlueScoreRequestMessage-class.html">GetSinkBlueScoreRequestMessage</a>?</span> <span class="parameter-name">getSinkBlueScoreRequest</span>, </span><span class="parameter" id="-param-notifySinkBlueScoreChangedRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifySinkBlueScoreChangedRequestMessage-class.html">NotifySinkBlueScoreChangedRequestMessage</a>?</span> <span class="parameter-name">notifySinkBlueScoreChangedRequest</span>, </span><span class="parameter" id="-param-banRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/BanRequestMessage-class.html">BanRequestMessage</a>?</span> <span class="parameter-name">banRequest</span>, </span><span class="parameter" id="-param-unbanRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/UnbanRequestMessage-class.html">UnbanRequestMessage</a>?</span> <span class="parameter-name">unbanRequest</span>, </span><span class="parameter" id="-param-getInfoRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetInfoRequestMessage-class.html">GetInfoRequestMessage</a>?</span> <span class="parameter-name">getInfoRequest</span>, </span><span class="parameter" id="-param-stopNotifyingUtxosChangedRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/StopNotifyingUtxosChangedRequestMessage-class.html">StopNotifyingUtxosChangedRequestMessage</a>?</span> <span class="parameter-name">stopNotifyingUtxosChangedRequest</span>, </span><span class="parameter" id="-param-notifyPruningPointUtxoSetOverrideRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyPruningPointUtxoSetOverrideRequestMessage-class.html">NotifyPruningPointUtxoSetOverrideRequestMessage</a>?</span> <span class="parameter-name">notifyPruningPointUtxoSetOverrideRequest</span>, </span><span class="parameter" id="-param-stopNotifyingPruningPointUtxoSetOverrideRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/StopNotifyingPruningPointUtxoSetOverrideRequestMessage-class.html">StopNotifyingPruningPointUtxoSetOverrideRequestMessage</a>?</span> <span class="parameter-name">stopNotifyingPruningPointUtxoSetOverrideRequest</span>, </span><span class="parameter" id="-param-estimateNetworkHashesPerSecondRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/EstimateNetworkHashesPerSecondRequestMessage-class.html">EstimateNetworkHashesPerSecondRequestMessage</a>?</span> <span class="parameter-name">estimateNetworkHashesPerSecondRequest</span>, </span><span class="parameter" id="-param-notifyVirtualDaaScoreChangedRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyVirtualDaaScoreChangedRequestMessage-class.html">NotifyVirtualDaaScoreChangedRequestMessage</a>?</span> <span class="parameter-name">notifyVirtualDaaScoreChangedRequest</span>, </span><span class="parameter" id="-param-getBalanceByAddressRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBalanceByAddressRequestMessage-class.html">GetBalanceByAddressRequestMessage</a>?</span> <span class="parameter-name">getBalanceByAddressRequest</span>, </span><span class="parameter" id="-param-getBalancesByAddressesRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetBalancesByAddressesRequestMessage-class.html">GetBalancesByAddressesRequestMessage</a>?</span> <span class="parameter-name">getBalancesByAddressesRequest</span>, </span><span class="parameter" id="-param-notifyNewBlockTemplateRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/NotifyNewBlockTemplateRequestMessage-class.html">NotifyNewBlockTemplateRequestMessage</a>?</span> <span class="parameter-name">notifyNewBlockTemplateRequest</span>, </span><span class="parameter" id="-param-getMempoolEntriesByAddressesRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetMempoolEntriesByAddressesRequestMessage-class.html">GetMempoolEntriesByAddressesRequestMessage</a>?</span> <span class="parameter-name">getMempoolEntriesByAddressesRequest</span>, </span><span class="parameter" id="-param-getCoinSupplyRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetCoinSupplyRequestMessage-class.html">GetCoinSupplyRequestMessage</a>?</span> <span class="parameter-name">getCoinSupplyRequest</span>, </span><span class="parameter" id="-param-pingRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/PingRequestMessage-class.html">PingRequestMessage</a>?</span> <span class="parameter-name">pingRequest</span>, </span><span class="parameter" id="-param-getMetricsRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetMetricsRequestMessage-class.html">GetMetricsRequestMessage</a>?</span> <span class="parameter-name">getMetricsRequest</span>, </span><span class="parameter" id="-param-getServerInfoRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetServerInfoRequestMessage-class.html">GetServerInfoRequestMessage</a>?</span> <span class="parameter-name">getServerInfoRequest</span>, </span><span class="parameter" id="-param-getSyncStatusRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetSyncStatusRequestMessage-class.html">GetSyncStatusRequestMessage</a>?</span> <span class="parameter-name">getSyncStatusRequest</span>, </span><span class="parameter" id="-param-getDaaScoreTimestampEstimateRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetDaaScoreTimestampEstimateRequestMessage-class.html">GetDaaScoreTimestampEstimateRequestMessage</a>?</span> <span class="parameter-name">getDaaScoreTimestampEstimateRequest</span>, </span><span class="parameter" id="-param-submitTransactionReplacementRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/SubmitTransactionReplacementRequestMessage-class.html">SubmitTransactionReplacementRequestMessage</a>?</span> <span class="parameter-name">submitTransactionReplacementRequest</span>, </span><span class="parameter" id="-param-getConnectionsRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetConnectionsRequestMessage-class.html">GetConnectionsRequestMessage</a>?</span> <span class="parameter-name">getConnectionsRequest</span>, </span><span class="parameter" id="-param-getSystemInfoRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetSystemInfoRequestMessage-class.html">GetSystemInfoRequestMessage</a>?</span> <span class="parameter-name">getSystemInfoRequest</span>, </span><span class="parameter" id="-param-getFeeEstimateRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetFeeEstimateRequestMessage-class.html">GetFeeEstimateRequestMessage</a>?</span> <span class="parameter-name">getFeeEstimateRequest</span>, </span><span class="parameter" id="-param-getFeeEstimateExperimentalRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetFeeEstimateExperimentalRequestMessage-class.html">GetFeeEstimateExperimentalRequestMessage</a>?</span> <span class="parameter-name">getFeeEstimateExperimentalRequest</span>, </span><span class="parameter" id="-param-getCurrentBlockColorRequest"><span class="type-annotation"><a href="../kaspa_grpc_rpc.pb/GetCurrentBlockColorRequestMessage-class.html">GetCurrentBlockColorRequestMessage</a>?</span> <span class="parameter-name">getCurrentBlockColorRequest</span></span>})</span>
+        </dt>
+        <dd>
+          
+            <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="KaspadRequest.fromBuffer" class="callable">
+          <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/KaspadRequest.fromBuffer.html">KaspadRequest.fromBuffer</a></span><span class="signature">(<span class="parameter" id="fromBuffer-param-i"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> <span class="parameter-name">i</span>, [</span><span class="parameter" id="fromBuffer-param-r"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/ExtensionRegistry-class.html">ExtensionRegistry</a></span> <span class="parameter-name">r</span> = <span class="default-value">$pb.ExtensionRegistry.EMPTY</span></span>])</span>
+        </dt>
+        <dd>
+          
+            <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="KaspadRequest.fromJson" class="callable">
+          <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/KaspadRequest.fromJson.html">KaspadRequest.fromJson</a></span><span class="signature">(<span class="parameter" id="fromJson-param-i"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">i</span>, [</span><span class="parameter" id="fromJson-param-r"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/ExtensionRegistry-class.html">ExtensionRegistry</a></span> <span class="parameter-name">r</span> = <span class="default-value">$pb.ExtensionRegistry.EMPTY</span></span>])</span>
+        </dt>
+        <dd>
+          
+            <div class="constructor-modifier features">factory</div>
+        </dd>
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-properties">
+    <h2>Properties</h2>
+    <dl class="properties">
+        <dt id="addPeerRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/addPeerRequest.html">addPeerRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/AddPeerRequestMessage-class.html">AddPeerRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="banRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/banRequest.html">banRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/BanRequestMessage-class.html">BanRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  SinkBlueScoreChangedNotificationMessage sinkBlueScoreChangedNotification = 1058;
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="estimateNetworkHashesPerSecondRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/estimateNetworkHashesPerSecondRequest.html">estimateNetworkHashesPerSecondRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/EstimateNetworkHashesPerSecondRequestMessage-class.html">EstimateNetworkHashesPerSecondRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBalanceByAddressRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getBalanceByAddressRequest.html">getBalanceByAddressRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBalanceByAddressRequestMessage-class.html">GetBalanceByAddressRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  VirtualDaaScoreChangedNotificationMessage virtualDaaScoreChangedNotification = 1076;
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBalancesByAddressesRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getBalancesByAddressesRequest.html">getBalancesByAddressesRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBalancesByAddressesRequestMessage-class.html">GetBalancesByAddressesRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBlockCountRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getBlockCountRequest.html">getBlockCountRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBlockCountRequestMessage-class.html">GetBlockCountRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBlockDagInfoRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getBlockDagInfoRequest.html">getBlockDagInfoRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBlockDagInfoRequestMessage-class.html">GetBlockDagInfoRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBlockRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getBlockRequest.html">getBlockRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBlockRequestMessage-class.html">GetBlockRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  VirtualChainChangedNotificationMessage virtualChainChangedNotification = 1024;
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBlocksRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getBlocksRequest.html">getBlocksRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBlocksRequestMessage-class.html">GetBlocksRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getBlockTemplateRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getBlockTemplateRequest.html">getBlockTemplateRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetBlockTemplateRequestMessage-class.html">GetBlockTemplateRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getCoinSupplyRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getCoinSupplyRequest.html">getCoinSupplyRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetCoinSupplyRequestMessage-class.html">GetCoinSupplyRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getConnectedPeerInfoRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getConnectedPeerInfoRequest.html">getConnectedPeerInfoRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetConnectedPeerInfoRequestMessage-class.html">GetConnectedPeerInfoRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getConnectionsRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getConnectionsRequest.html">getConnectionsRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetConnectionsRequestMessage-class.html">GetConnectionsRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getCurrentBlockColorRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getCurrentBlockColorRequest.html">getCurrentBlockColorRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetCurrentBlockColorRequestMessage-class.html">GetCurrentBlockColorRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getCurrentNetworkRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getCurrentNetworkRequest.html">getCurrentNetworkRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetCurrentNetworkRequestMessage-class.html">GetCurrentNetworkRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getDaaScoreTimestampEstimateRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getDaaScoreTimestampEstimateRequest.html">getDaaScoreTimestampEstimateRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetDaaScoreTimestampEstimateRequestMessage-class.html">GetDaaScoreTimestampEstimateRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getFeeEstimateExperimentalRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getFeeEstimateExperimentalRequest.html">getFeeEstimateExperimentalRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetFeeEstimateExperimentalRequestMessage-class.html">GetFeeEstimateExperimentalRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getFeeEstimateRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getFeeEstimateRequest.html">getFeeEstimateRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetFeeEstimateRequestMessage-class.html">GetFeeEstimateRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getHeadersRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getHeadersRequest.html">getHeadersRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetHeadersRequestMessage-class.html">GetHeadersRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getInfoRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getInfoRequest.html">getInfoRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetInfoRequestMessage-class.html">GetInfoRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getMempoolEntriesByAddressesRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getMempoolEntriesByAddressesRequest.html">getMempoolEntriesByAddressesRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetMempoolEntriesByAddressesRequestMessage-class.html">GetMempoolEntriesByAddressesRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  NewBlockTemplateNotificationMessage newBlockTemplateNotification = 1083;
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getMempoolEntriesRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getMempoolEntriesRequest.html">getMempoolEntriesRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetMempoolEntriesRequestMessage-class.html">GetMempoolEntriesRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  FinalityConflictNotificationMessage finalityConflictNotification = 1041;
+FinalityConflictResolvedNotificationMessage finalityConflictResolvedNotification = 1042;
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getMempoolEntryRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getMempoolEntryRequest.html">getMempoolEntryRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetMempoolEntryRequestMessage-class.html">GetMempoolEntryRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getMetricsRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getMetricsRequest.html">getMetricsRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetMetricsRequestMessage-class.html">GetMetricsRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getPeerAddressesRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getPeerAddressesRequest.html">getPeerAddressesRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetPeerAddressesRequestMessage-class.html">GetPeerAddressesRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  BlockAddedNotificationMessage blockAddedNotification = 1009;
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getServerInfoRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getServerInfoRequest.html">getServerInfoRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetServerInfoRequestMessage-class.html">GetServerInfoRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getSinkBlueScoreRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getSinkBlueScoreRequest.html">getSinkBlueScoreRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetSinkBlueScoreRequestMessage-class.html">GetSinkBlueScoreRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getSinkRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getSinkRequest.html">getSinkRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetSinkRequestMessage-class.html">GetSinkRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getSubnetworkRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getSubnetworkRequest.html">getSubnetworkRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetSubnetworkRequestMessage-class.html">GetSubnetworkRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getSyncStatusRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getSyncStatusRequest.html">getSyncStatusRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetSyncStatusRequestMessage-class.html">GetSyncStatusRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getSystemInfoRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getSystemInfoRequest.html">getSystemInfoRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetSystemInfoRequestMessage-class.html">GetSystemInfoRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getUtxosByAddressesRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getUtxosByAddressesRequest.html">getUtxosByAddressesRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetUtxosByAddressesRequestMessage-class.html">GetUtxosByAddressesRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  UtxosChangedNotificationMessage utxosChangedNotification = 1051;
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="getVirtualChainFromBlockRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getVirtualChainFromBlockRequest.html">getVirtualChainFromBlockRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/GetVirtualChainFromBlockRequestMessage-class.html">GetVirtualChainFromBlockRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  Calculates a hash code based on the contents of the protobuf.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="id" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/id.html">id</a></span>
+  <span class="signature">&#8596; <a href="https://pub.dev/documentation/fixnum/1.1.1/fixnum/Int64-class.html">Int64</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="info_" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/info_.html">info_</a></span>
+  <span class="signature">&#8594; <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/BuilderInfo-class.html">BuilderInfo</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">no setter</span><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="isFrozen" class="property inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/isFrozen.html">isFrozen</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns <code>true</code> if this message is marked read-only. Otherwise <code>false</code>.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="notifyBlockAddedRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/notifyBlockAddedRequest.html">notifyBlockAddedRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyBlockAddedRequestMessage-class.html">NotifyBlockAddedRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifyFinalityConflictRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/notifyFinalityConflictRequest.html">notifyFinalityConflictRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyFinalityConflictRequestMessage-class.html">NotifyFinalityConflictRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifyNewBlockTemplateRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/notifyNewBlockTemplateRequest.html">notifyNewBlockTemplateRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyNewBlockTemplateRequestMessage-class.html">NotifyNewBlockTemplateRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifyPruningPointUtxoSetOverrideRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/notifyPruningPointUtxoSetOverrideRequest.html">notifyPruningPointUtxoSetOverrideRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyPruningPointUtxoSetOverrideRequestMessage-class.html">NotifyPruningPointUtxoSetOverrideRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifySinkBlueScoreChangedRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/notifySinkBlueScoreChangedRequest.html">notifySinkBlueScoreChangedRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifySinkBlueScoreChangedRequestMessage-class.html">NotifySinkBlueScoreChangedRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifyUtxosChangedRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/notifyUtxosChangedRequest.html">notifyUtxosChangedRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyUtxosChangedRequestMessage-class.html">NotifyUtxosChangedRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifyVirtualChainChangedRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/notifyVirtualChainChangedRequest.html">notifyVirtualChainChangedRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyVirtualChainChangedRequestMessage-class.html">NotifyVirtualChainChangedRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="notifyVirtualDaaScoreChangedRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/notifyVirtualDaaScoreChangedRequest.html">notifyVirtualDaaScoreChangedRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/NotifyVirtualDaaScoreChangedRequestMessage-class.html">NotifyVirtualDaaScoreChangedRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="pingRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/pingRequest.html">pingRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/PingRequestMessage-class.html">PingRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="resolveFinalityConflictRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/resolveFinalityConflictRequest.html">resolveFinalityConflictRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/ResolveFinalityConflictRequestMessage-class.html">ResolveFinalityConflictRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="shutdownRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/shutdownRequest.html">shutdownRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/ShutdownRequestMessage-class.html">ShutdownRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="stopNotifyingPruningPointUtxoSetOverrideRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/stopNotifyingPruningPointUtxoSetOverrideRequest.html">stopNotifyingPruningPointUtxoSetOverrideRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/StopNotifyingPruningPointUtxoSetOverrideRequestMessage-class.html">StopNotifyingPruningPointUtxoSetOverrideRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  PruningPointUtxoSetOverrideNotificationMessage pruningPointUtxoSetOverrideNotification = 1069;
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="stopNotifyingUtxosChangedRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/stopNotifyingUtxosChangedRequest.html">stopNotifyingUtxosChangedRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/StopNotifyingUtxosChangedRequestMessage-class.html">StopNotifyingUtxosChangedRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="submitBlockRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/submitBlockRequest.html">submitBlockRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/SubmitBlockRequestMessage-class.html">SubmitBlockRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="submitTransactionReplacementRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/submitTransactionReplacementRequest.html">submitTransactionReplacementRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/SubmitTransactionReplacementRequestMessage-class.html">SubmitTransactionReplacementRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="submitTransactionRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/submitTransactionRequest.html">submitTransactionRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/SubmitTransactionRequestMessage-class.html">SubmitTransactionRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="unbanRequest" class="property">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/unbanRequest.html">unbanRequest</a></span>
+  <span class="signature">&#8596; <a href="../kaspa_grpc_rpc.pb/UnbanRequestMessage-class.html">UnbanRequestMessage</a></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="unknownFields" class="property inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/unknownFields.html">unknownFields</a></span>
+  <span class="signature">&#8594; <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/UnknownFieldSet-class.html">UnknownFieldSet</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="addExtension" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/addExtension.html">addExtension</a></span><span class="signature">(<wbr><span class="parameter" id="addExtension-param-extension"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/Extension-class.html">Extension</a></span> <span class="parameter-name">extension</span>, </span><span class="parameter" id="addExtension-param-value"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a>?</span> <span class="parameter-name">value</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Adds an extension field value to a repeated field.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="check" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/check.html">check</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Throws a <a href="https://api.flutter.dev/flutter/dart-core/StateError-class.html">StateError</a> if the message has required fields without a value.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="clear" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/clear.html">clear</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Clears all data that was set in this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="clearAddPeerRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearAddPeerRequest.html">clearAddPeerRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearBanRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearBanRequest.html">clearBanRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearEstimateNetworkHashesPerSecondRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearEstimateNetworkHashesPerSecondRequest.html">clearEstimateNetworkHashesPerSecondRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearExtension" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/clearExtension.html">clearExtension</a></span><span class="signature">(<wbr><span class="parameter" id="clearExtension-param-extension"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/Extension-class.html">Extension</a></span> <span class="parameter-name">extension</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Clears an extension field and also removes the extension.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="clearField" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/clearField.html">clearField</a></span><span class="signature">(<wbr><span class="parameter" id="clearField-param-tagNumber"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">tagNumber</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Clears the contents of a given field.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="clearGetBalanceByAddressRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetBalanceByAddressRequest.html">clearGetBalanceByAddressRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetBalancesByAddressesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetBalancesByAddressesRequest.html">clearGetBalancesByAddressesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetBlockCountRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetBlockCountRequest.html">clearGetBlockCountRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetBlockDagInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetBlockDagInfoRequest.html">clearGetBlockDagInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetBlockRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetBlockRequest.html">clearGetBlockRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetBlocksRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetBlocksRequest.html">clearGetBlocksRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetBlockTemplateRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetBlockTemplateRequest.html">clearGetBlockTemplateRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetCoinSupplyRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetCoinSupplyRequest.html">clearGetCoinSupplyRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetConnectedPeerInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetConnectedPeerInfoRequest.html">clearGetConnectedPeerInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetConnectionsRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetConnectionsRequest.html">clearGetConnectionsRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetCurrentBlockColorRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetCurrentBlockColorRequest.html">clearGetCurrentBlockColorRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetCurrentNetworkRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetCurrentNetworkRequest.html">clearGetCurrentNetworkRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetDaaScoreTimestampEstimateRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetDaaScoreTimestampEstimateRequest.html">clearGetDaaScoreTimestampEstimateRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetFeeEstimateExperimentalRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetFeeEstimateExperimentalRequest.html">clearGetFeeEstimateExperimentalRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetFeeEstimateRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetFeeEstimateRequest.html">clearGetFeeEstimateRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetHeadersRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetHeadersRequest.html">clearGetHeadersRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetInfoRequest.html">clearGetInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetMempoolEntriesByAddressesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetMempoolEntriesByAddressesRequest.html">clearGetMempoolEntriesByAddressesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetMempoolEntriesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetMempoolEntriesRequest.html">clearGetMempoolEntriesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetMempoolEntryRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetMempoolEntryRequest.html">clearGetMempoolEntryRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetMetricsRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetMetricsRequest.html">clearGetMetricsRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetPeerAddressesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetPeerAddressesRequest.html">clearGetPeerAddressesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetServerInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetServerInfoRequest.html">clearGetServerInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetSinkBlueScoreRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetSinkBlueScoreRequest.html">clearGetSinkBlueScoreRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetSinkRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetSinkRequest.html">clearGetSinkRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetSubnetworkRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetSubnetworkRequest.html">clearGetSubnetworkRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetSyncStatusRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetSyncStatusRequest.html">clearGetSyncStatusRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetSystemInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetSystemInfoRequest.html">clearGetSystemInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetUtxosByAddressesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetUtxosByAddressesRequest.html">clearGetUtxosByAddressesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearGetVirtualChainFromBlockRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearGetVirtualChainFromBlockRequest.html">clearGetVirtualChainFromBlockRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearId" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearId.html">clearId</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyBlockAddedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearNotifyBlockAddedRequest.html">clearNotifyBlockAddedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyFinalityConflictRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearNotifyFinalityConflictRequest.html">clearNotifyFinalityConflictRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyNewBlockTemplateRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearNotifyNewBlockTemplateRequest.html">clearNotifyNewBlockTemplateRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyPruningPointUtxoSetOverrideRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearNotifyPruningPointUtxoSetOverrideRequest.html">clearNotifyPruningPointUtxoSetOverrideRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifySinkBlueScoreChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearNotifySinkBlueScoreChangedRequest.html">clearNotifySinkBlueScoreChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyUtxosChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearNotifyUtxosChangedRequest.html">clearNotifyUtxosChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyVirtualChainChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearNotifyVirtualChainChangedRequest.html">clearNotifyVirtualChainChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearNotifyVirtualDaaScoreChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearNotifyVirtualDaaScoreChangedRequest.html">clearNotifyVirtualDaaScoreChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearPayload" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearPayload.html">clearPayload</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearPingRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearPingRequest.html">clearPingRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearResolveFinalityConflictRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearResolveFinalityConflictRequest.html">clearResolveFinalityConflictRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearShutdownRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearShutdownRequest.html">clearShutdownRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearStopNotifyingPruningPointUtxoSetOverrideRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearStopNotifyingPruningPointUtxoSetOverrideRequest.html">clearStopNotifyingPruningPointUtxoSetOverrideRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearStopNotifyingUtxosChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearStopNotifyingUtxosChangedRequest.html">clearStopNotifyingUtxosChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearSubmitBlockRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearSubmitBlockRequest.html">clearSubmitBlockRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearSubmitTransactionReplacementRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearSubmitTransactionReplacementRequest.html">clearSubmitTransactionReplacementRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearSubmitTransactionRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearSubmitTransactionRequest.html">clearSubmitTransactionRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clearUnbanRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/clearUnbanRequest.html">clearUnbanRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="clone" class="callable">
+  <span class="name deprecated"><a class="deprecated" href="../kaspa_grpc_messages.pb/KaspadRequest/clone.html">clone</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_messages.pb/KaspadRequest-class.html">KaspadRequest</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Creates a deep copy of the fields in this message.
+(The generated code uses <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromMessage.html">mergeFromMessage</a>.)
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="copyWith" class="callable">
+  <span class="name deprecated"><a class="deprecated" href="../kaspa_grpc_messages.pb/KaspadRequest/copyWith.html">copyWith</a></span><span class="signature">(<wbr><span class="parameter" id="copyWith-param-updates"><span class="type-annotation">void</span> <span class="parameter-name">updates</span>(<span class="parameter" id="param-"><span class="type-annotation"><a href="../kaspa_grpc_messages.pb/KaspadRequest-class.html">KaspadRequest</a></span></span>)</span>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_messages.pb/KaspadRequest-class.html">KaspadRequest</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Apply <code>updates</code> to a copy of this message.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="createEmptyInstance" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/createEmptyInstance.html">createEmptyInstance</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_messages.pb/KaspadRequest-class.html">KaspadRequest</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Creates an empty instance of the same message type as this.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="deepCopy" class="callable">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessageGenericExtensions/deepCopy.html">deepCopy</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; T</span>
+  </span>
+  
+
+</dt>
+<dd>
+      <p class="from-extension">
+        <span>Available on T,
+        provided by the <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessageGenericExtensions.html">GeneratedMessageGenericExtensions</a> extension</span>
+      </p>
+  Returns a writable deep copy of this message.
+  
+
+</dd>
+
+        <dt id="ensureAddPeerRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureAddPeerRequest.html">ensureAddPeerRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/AddPeerRequestMessage-class.html">AddPeerRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureBanRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureBanRequest.html">ensureBanRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/BanRequestMessage-class.html">BanRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureEstimateNetworkHashesPerSecondRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureEstimateNetworkHashesPerSecondRequest.html">ensureEstimateNetworkHashesPerSecondRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/EstimateNetworkHashesPerSecondRequestMessage-class.html">EstimateNetworkHashesPerSecondRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBalanceByAddressRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetBalanceByAddressRequest.html">ensureGetBalanceByAddressRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBalanceByAddressRequestMessage-class.html">GetBalanceByAddressRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBalancesByAddressesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetBalancesByAddressesRequest.html">ensureGetBalancesByAddressesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBalancesByAddressesRequestMessage-class.html">GetBalancesByAddressesRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBlockCountRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetBlockCountRequest.html">ensureGetBlockCountRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBlockCountRequestMessage-class.html">GetBlockCountRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBlockDagInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetBlockDagInfoRequest.html">ensureGetBlockDagInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBlockDagInfoRequestMessage-class.html">GetBlockDagInfoRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBlockRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetBlockRequest.html">ensureGetBlockRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBlockRequestMessage-class.html">GetBlockRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBlocksRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetBlocksRequest.html">ensureGetBlocksRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBlocksRequestMessage-class.html">GetBlocksRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetBlockTemplateRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetBlockTemplateRequest.html">ensureGetBlockTemplateRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetBlockTemplateRequestMessage-class.html">GetBlockTemplateRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetCoinSupplyRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetCoinSupplyRequest.html">ensureGetCoinSupplyRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetCoinSupplyRequestMessage-class.html">GetCoinSupplyRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetConnectedPeerInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetConnectedPeerInfoRequest.html">ensureGetConnectedPeerInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetConnectedPeerInfoRequestMessage-class.html">GetConnectedPeerInfoRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetConnectionsRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetConnectionsRequest.html">ensureGetConnectionsRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetConnectionsRequestMessage-class.html">GetConnectionsRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetCurrentBlockColorRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetCurrentBlockColorRequest.html">ensureGetCurrentBlockColorRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetCurrentBlockColorRequestMessage-class.html">GetCurrentBlockColorRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetCurrentNetworkRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetCurrentNetworkRequest.html">ensureGetCurrentNetworkRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetCurrentNetworkRequestMessage-class.html">GetCurrentNetworkRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetDaaScoreTimestampEstimateRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetDaaScoreTimestampEstimateRequest.html">ensureGetDaaScoreTimestampEstimateRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetDaaScoreTimestampEstimateRequestMessage-class.html">GetDaaScoreTimestampEstimateRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetFeeEstimateExperimentalRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetFeeEstimateExperimentalRequest.html">ensureGetFeeEstimateExperimentalRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetFeeEstimateExperimentalRequestMessage-class.html">GetFeeEstimateExperimentalRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetFeeEstimateRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetFeeEstimateRequest.html">ensureGetFeeEstimateRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetFeeEstimateRequestMessage-class.html">GetFeeEstimateRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetHeadersRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetHeadersRequest.html">ensureGetHeadersRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetHeadersRequestMessage-class.html">GetHeadersRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetInfoRequest.html">ensureGetInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetInfoRequestMessage-class.html">GetInfoRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetMempoolEntriesByAddressesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetMempoolEntriesByAddressesRequest.html">ensureGetMempoolEntriesByAddressesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetMempoolEntriesByAddressesRequestMessage-class.html">GetMempoolEntriesByAddressesRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetMempoolEntriesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetMempoolEntriesRequest.html">ensureGetMempoolEntriesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetMempoolEntriesRequestMessage-class.html">GetMempoolEntriesRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetMempoolEntryRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetMempoolEntryRequest.html">ensureGetMempoolEntryRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetMempoolEntryRequestMessage-class.html">GetMempoolEntryRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetMetricsRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetMetricsRequest.html">ensureGetMetricsRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetMetricsRequestMessage-class.html">GetMetricsRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetPeerAddressesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetPeerAddressesRequest.html">ensureGetPeerAddressesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetPeerAddressesRequestMessage-class.html">GetPeerAddressesRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetServerInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetServerInfoRequest.html">ensureGetServerInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetServerInfoRequestMessage-class.html">GetServerInfoRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetSinkBlueScoreRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetSinkBlueScoreRequest.html">ensureGetSinkBlueScoreRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetSinkBlueScoreRequestMessage-class.html">GetSinkBlueScoreRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetSinkRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetSinkRequest.html">ensureGetSinkRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetSinkRequestMessage-class.html">GetSinkRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetSubnetworkRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetSubnetworkRequest.html">ensureGetSubnetworkRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetSubnetworkRequestMessage-class.html">GetSubnetworkRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetSyncStatusRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetSyncStatusRequest.html">ensureGetSyncStatusRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetSyncStatusRequestMessage-class.html">GetSyncStatusRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetSystemInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetSystemInfoRequest.html">ensureGetSystemInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetSystemInfoRequestMessage-class.html">GetSystemInfoRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetUtxosByAddressesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetUtxosByAddressesRequest.html">ensureGetUtxosByAddressesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetUtxosByAddressesRequestMessage-class.html">GetUtxosByAddressesRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureGetVirtualChainFromBlockRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureGetVirtualChainFromBlockRequest.html">ensureGetVirtualChainFromBlockRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/GetVirtualChainFromBlockRequestMessage-class.html">GetVirtualChainFromBlockRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyBlockAddedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureNotifyBlockAddedRequest.html">ensureNotifyBlockAddedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyBlockAddedRequestMessage-class.html">NotifyBlockAddedRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyFinalityConflictRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureNotifyFinalityConflictRequest.html">ensureNotifyFinalityConflictRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyFinalityConflictRequestMessage-class.html">NotifyFinalityConflictRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyNewBlockTemplateRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureNotifyNewBlockTemplateRequest.html">ensureNotifyNewBlockTemplateRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyNewBlockTemplateRequestMessage-class.html">NotifyNewBlockTemplateRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyPruningPointUtxoSetOverrideRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureNotifyPruningPointUtxoSetOverrideRequest.html">ensureNotifyPruningPointUtxoSetOverrideRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyPruningPointUtxoSetOverrideRequestMessage-class.html">NotifyPruningPointUtxoSetOverrideRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifySinkBlueScoreChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureNotifySinkBlueScoreChangedRequest.html">ensureNotifySinkBlueScoreChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifySinkBlueScoreChangedRequestMessage-class.html">NotifySinkBlueScoreChangedRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyUtxosChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureNotifyUtxosChangedRequest.html">ensureNotifyUtxosChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyUtxosChangedRequestMessage-class.html">NotifyUtxosChangedRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyVirtualChainChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureNotifyVirtualChainChangedRequest.html">ensureNotifyVirtualChainChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyVirtualChainChangedRequestMessage-class.html">NotifyVirtualChainChangedRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureNotifyVirtualDaaScoreChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureNotifyVirtualDaaScoreChangedRequest.html">ensureNotifyVirtualDaaScoreChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/NotifyVirtualDaaScoreChangedRequestMessage-class.html">NotifyVirtualDaaScoreChangedRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensurePingRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensurePingRequest.html">ensurePingRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/PingRequestMessage-class.html">PingRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureResolveFinalityConflictRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureResolveFinalityConflictRequest.html">ensureResolveFinalityConflictRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/ResolveFinalityConflictRequestMessage-class.html">ResolveFinalityConflictRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureShutdownRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureShutdownRequest.html">ensureShutdownRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/ShutdownRequestMessage-class.html">ShutdownRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureStopNotifyingPruningPointUtxoSetOverrideRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureStopNotifyingPruningPointUtxoSetOverrideRequest.html">ensureStopNotifyingPruningPointUtxoSetOverrideRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/StopNotifyingPruningPointUtxoSetOverrideRequestMessage-class.html">StopNotifyingPruningPointUtxoSetOverrideRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureStopNotifyingUtxosChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureStopNotifyingUtxosChangedRequest.html">ensureStopNotifyingUtxosChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/StopNotifyingUtxosChangedRequestMessage-class.html">StopNotifyingUtxosChangedRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureSubmitBlockRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureSubmitBlockRequest.html">ensureSubmitBlockRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/SubmitBlockRequestMessage-class.html">SubmitBlockRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureSubmitTransactionReplacementRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureSubmitTransactionReplacementRequest.html">ensureSubmitTransactionReplacementRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/SubmitTransactionReplacementRequestMessage-class.html">SubmitTransactionReplacementRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureSubmitTransactionRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureSubmitTransactionRequest.html">ensureSubmitTransactionRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/SubmitTransactionRequestMessage-class.html">SubmitTransactionRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="ensureUnbanRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/ensureUnbanRequest.html">ensureUnbanRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_rpc.pb/UnbanRequestMessage-class.html">UnbanRequestMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="extensionsAreInitialized" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/extensionsAreInitialized.html">extensionsAreInitialized</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="freeze" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/freeze.html">freeze</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage-class.html">GeneratedMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Make this message read-only.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="getDefaultForField" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/getDefaultForField.html">getDefaultForField</a></span><span class="signature">(<wbr><span class="parameter" id="getDefaultForField-param-tagNumber"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">tagNumber</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns the default value for the given field.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="getExtension" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/getExtension.html">getExtension</a></span><span class="signature">(<wbr><span class="parameter" id="getExtension-param-extension"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/Extension-class.html">Extension</a></span> <span class="parameter-name">extension</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns the value of <code>extension</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="getField" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/getField.html">getField</a></span><span class="signature">(<wbr><span class="parameter" id="getField-param-tagNumber"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">tagNumber</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns the value of the field associated with <code>tagNumber</code>, or the
+default value if it is not set.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="getFieldOrNull" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/getFieldOrNull.html">getFieldOrNull</a></span><span class="signature">(<wbr><span class="parameter" id="getFieldOrNull-param-tagNumber"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">tagNumber</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns the value of a field, ignoring any defaults.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="getTagNumber" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/getTagNumber.html">getTagNumber</a></span><span class="signature">(<wbr><span class="parameter" id="getTagNumber-param-fieldName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">fieldName</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="hasAddPeerRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasAddPeerRequest.html">hasAddPeerRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasBanRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasBanRequest.html">hasBanRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasEstimateNetworkHashesPerSecondRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasEstimateNetworkHashesPerSecondRequest.html">hasEstimateNetworkHashesPerSecondRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasExtension" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/hasExtension.html">hasExtension</a></span><span class="signature">(<wbr><span class="parameter" id="hasExtension-param-extension"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/Extension-class.html">Extension</a></span> <span class="parameter-name">extension</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns <code>true</code> if a value of <code>extension</code> is present.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="hasField" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/hasField.html">hasField</a></span><span class="signature">(<wbr><span class="parameter" id="hasField-param-tagNumber"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">tagNumber</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Whether this message has a field associated with <code>tagNumber</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="hasGetBalanceByAddressRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetBalanceByAddressRequest.html">hasGetBalanceByAddressRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetBalancesByAddressesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetBalancesByAddressesRequest.html">hasGetBalancesByAddressesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetBlockCountRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetBlockCountRequest.html">hasGetBlockCountRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetBlockDagInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetBlockDagInfoRequest.html">hasGetBlockDagInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetBlockRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetBlockRequest.html">hasGetBlockRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetBlocksRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetBlocksRequest.html">hasGetBlocksRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetBlockTemplateRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetBlockTemplateRequest.html">hasGetBlockTemplateRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetCoinSupplyRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetCoinSupplyRequest.html">hasGetCoinSupplyRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetConnectedPeerInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetConnectedPeerInfoRequest.html">hasGetConnectedPeerInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetConnectionsRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetConnectionsRequest.html">hasGetConnectionsRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetCurrentBlockColorRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetCurrentBlockColorRequest.html">hasGetCurrentBlockColorRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetCurrentNetworkRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetCurrentNetworkRequest.html">hasGetCurrentNetworkRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetDaaScoreTimestampEstimateRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetDaaScoreTimestampEstimateRequest.html">hasGetDaaScoreTimestampEstimateRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetFeeEstimateExperimentalRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetFeeEstimateExperimentalRequest.html">hasGetFeeEstimateExperimentalRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetFeeEstimateRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetFeeEstimateRequest.html">hasGetFeeEstimateRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetHeadersRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetHeadersRequest.html">hasGetHeadersRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetInfoRequest.html">hasGetInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetMempoolEntriesByAddressesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetMempoolEntriesByAddressesRequest.html">hasGetMempoolEntriesByAddressesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetMempoolEntriesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetMempoolEntriesRequest.html">hasGetMempoolEntriesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetMempoolEntryRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetMempoolEntryRequest.html">hasGetMempoolEntryRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetMetricsRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetMetricsRequest.html">hasGetMetricsRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetPeerAddressesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetPeerAddressesRequest.html">hasGetPeerAddressesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetServerInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetServerInfoRequest.html">hasGetServerInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetSinkBlueScoreRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetSinkBlueScoreRequest.html">hasGetSinkBlueScoreRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetSinkRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetSinkRequest.html">hasGetSinkRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetSubnetworkRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetSubnetworkRequest.html">hasGetSubnetworkRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetSyncStatusRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetSyncStatusRequest.html">hasGetSyncStatusRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetSystemInfoRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetSystemInfoRequest.html">hasGetSystemInfoRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetUtxosByAddressesRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetUtxosByAddressesRequest.html">hasGetUtxosByAddressesRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasGetVirtualChainFromBlockRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasGetVirtualChainFromBlockRequest.html">hasGetVirtualChainFromBlockRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasId" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasId.html">hasId</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyBlockAddedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasNotifyBlockAddedRequest.html">hasNotifyBlockAddedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyFinalityConflictRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasNotifyFinalityConflictRequest.html">hasNotifyFinalityConflictRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyNewBlockTemplateRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasNotifyNewBlockTemplateRequest.html">hasNotifyNewBlockTemplateRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyPruningPointUtxoSetOverrideRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasNotifyPruningPointUtxoSetOverrideRequest.html">hasNotifyPruningPointUtxoSetOverrideRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifySinkBlueScoreChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasNotifySinkBlueScoreChangedRequest.html">hasNotifySinkBlueScoreChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyUtxosChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasNotifyUtxosChangedRequest.html">hasNotifyUtxosChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyVirtualChainChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasNotifyVirtualChainChangedRequest.html">hasNotifyVirtualChainChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasNotifyVirtualDaaScoreChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasNotifyVirtualDaaScoreChangedRequest.html">hasNotifyVirtualDaaScoreChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasPingRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasPingRequest.html">hasPingRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasRequiredFields" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/hasRequiredFields.html">hasRequiredFields</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Whether the message has required fields.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="hasResolveFinalityConflictRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasResolveFinalityConflictRequest.html">hasResolveFinalityConflictRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasShutdownRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasShutdownRequest.html">hasShutdownRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasStopNotifyingPruningPointUtxoSetOverrideRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasStopNotifyingPruningPointUtxoSetOverrideRequest.html">hasStopNotifyingPruningPointUtxoSetOverrideRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasStopNotifyingUtxosChangedRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasStopNotifyingUtxosChangedRequest.html">hasStopNotifyingUtxosChangedRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasSubmitBlockRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasSubmitBlockRequest.html">hasSubmitBlockRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasSubmitTransactionReplacementRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasSubmitTransactionReplacementRequest.html">hasSubmitTransactionReplacementRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasSubmitTransactionRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasSubmitTransactionRequest.html">hasSubmitTransactionRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="hasUnbanRequest" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/hasUnbanRequest.html">hasUnbanRequest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="isInitialized" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/isInitialized.html">isInitialized</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Whether all required fields in the message and embedded messages are set.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeFromBuffer" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromBuffer.html">mergeFromBuffer</a></span><span class="signature">(<wbr><span class="parameter" id="mergeFromBuffer-param-input"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> <span class="parameter-name">input</span>, [</span><span class="parameter" id="mergeFromBuffer-param-extensionRegistry"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/ExtensionRegistry-class.html">ExtensionRegistry</a></span> <span class="parameter-name">extensionRegistry</span> = <span class="default-value">ExtensionRegistry.EMPTY</span></span>])
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Merges serialized protocol buffer data into this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeFromCodedBufferReader" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromCodedBufferReader.html">mergeFromCodedBufferReader</a></span><span class="signature">(<wbr><span class="parameter" id="mergeFromCodedBufferReader-param-input"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/CodedBufferReader-class.html">CodedBufferReader</a></span> <span class="parameter-name">input</span>, [</span><span class="parameter" id="mergeFromCodedBufferReader-param-extensionRegistry"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/ExtensionRegistry-class.html">ExtensionRegistry</a></span> <span class="parameter-name">extensionRegistry</span> = <span class="default-value">ExtensionRegistry.EMPTY</span></span>])
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Same as <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromBuffer.html">mergeFromBuffer</a>, but takes a <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/CodedBufferReader-class.html">CodedBufferReader</a> input.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeFromJson" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromJson.html">mergeFromJson</a></span><span class="signature">(<wbr><span class="parameter" id="mergeFromJson-param-data"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">data</span>, [</span><span class="parameter" id="mergeFromJson-param-extensionRegistry"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/ExtensionRegistry-class.html">ExtensionRegistry</a></span> <span class="parameter-name">extensionRegistry</span> = <span class="default-value">ExtensionRegistry.EMPTY</span></span>])
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Merges field values from <code>data</code>, a JSON object, encoded as described by
+<a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/writeToJson.html">GeneratedMessage.writeToJson</a>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeFromJsonMap" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromJsonMap.html">mergeFromJsonMap</a></span><span class="signature">(<wbr><span class="parameter" id="mergeFromJsonMap-param-json"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">json</span>, [</span><span class="parameter" id="mergeFromJsonMap-param-extensionRegistry"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/ExtensionRegistry-class.html">ExtensionRegistry</a></span> <span class="parameter-name">extensionRegistry</span> = <span class="default-value">ExtensionRegistry.EMPTY</span></span>])
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Merges field values from a JSON object represented as a Dart map.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeFromMessage" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromMessage.html">mergeFromMessage</a></span><span class="signature">(<wbr><span class="parameter" id="mergeFromMessage-param-other"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage-class.html">GeneratedMessage</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Merges the contents of the <code>other</code> into this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeFromProto3Json" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeFromProto3Json.html">mergeFromProto3Json</a></span><span class="signature">(<wbr><span class="parameter" id="mergeFromProto3Json-param-json"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a>?</span> <span class="parameter-name">json</span>, {</span><span class="parameter" id="mergeFromProto3Json-param-typeRegistry"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/TypeRegistry-class.html">TypeRegistry</a></span> <span class="parameter-name">typeRegistry</span> = <span class="default-value">const TypeRegistry.empty()</span>, </span><span class="parameter" id="mergeFromProto3Json-param-ignoreUnknownFields"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">ignoreUnknownFields</span> = <span class="default-value">false</span>, </span><span class="parameter" id="mergeFromProto3Json-param-supportNamesWithUnderscores"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">supportNamesWithUnderscores</span> = <span class="default-value">true</span>, </span><span class="parameter" id="mergeFromProto3Json-param-permissiveEnums"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">permissiveEnums</span> = <span class="default-value">false</span></span>})
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Merges field values from <code>json</code>, a JSON object using proto3 encoding.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="mergeUnknownFields" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/mergeUnknownFields.html">mergeUnknownFields</a></span><span class="signature">(<wbr><span class="parameter" id="mergeUnknownFields-param-unknownFieldSet"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/UnknownFieldSet-class.html">UnknownFieldSet</a></span> <span class="parameter-name">unknownFieldSet</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a nonexistent method or property is accessed.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="rebuild" class="callable">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessageGenericExtensions/rebuild.html">rebuild</a></span><span class="signature">(<wbr><span class="parameter" id="rebuild-param-updates"><span class="type-annotation">void</span> <span class="parameter-name">updates</span>(<span class="parameter" id="param-"><span class="type-annotation">T</span></span>)</span>)
+    <span class="returntype parameter">&#8594; T</span>
+  </span>
+  
+
+</dt>
+<dd>
+      <p class="from-extension">
+        <span>Available on T,
+        provided by the <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessageGenericExtensions.html">GeneratedMessageGenericExtensions</a> extension</span>
+      </p>
+  Apply <code>updates</code> to a copy of this message.
+  
+
+</dd>
+
+        <dt id="setExtension" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/setExtension.html">setExtension</a></span><span class="signature">(<wbr><span class="parameter" id="setExtension-param-extension"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/Extension-class.html">Extension</a></span> <span class="parameter-name">extension</span>, </span><span class="parameter" id="setExtension-param-value"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">value</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Sets the value of a non-repeated extension field to <code>value</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="setField" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/setField.html">setField</a></span><span class="signature">(<wbr><span class="parameter" id="setField-param-tagNumber"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">tagNumber</span>, </span><span class="parameter" id="setField-param-value"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">value</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Sets the value of a field by its <code>tagNumber</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toBuilder" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/toBuilder.html">toBuilder</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage-class.html">GeneratedMessage</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Creates a writable, shallow copy of this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toDebugString" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/toDebugString.html">toDebugString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> representation of this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toProto3Json" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/toProto3Json.html">toProto3Json</a></span><span class="signature">(<wbr>{<span class="parameter" id="toProto3Json-param-typeRegistry"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/TypeRegistry-class.html">TypeRegistry</a></span> <span class="parameter-name">typeRegistry</span> = <span class="default-value">const TypeRegistry.empty()</span></span>})
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a>?</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns an Object representing Proto3 JSON serialization of <code>this</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> representation of this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="whichPayload" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/whichPayload.html">whichPayload</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_messages.pb/KaspadRequest_Payload.html">KaspadRequest_Payload</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="writeToBuffer" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/writeToBuffer.html">writeToBuffer</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Serialize the message as the protobuf binary format.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="writeToCodedBufferWriter" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/writeToCodedBufferWriter.html">writeToCodedBufferWriter</a></span><span class="signature">(<wbr><span class="parameter" id="writeToCodedBufferWriter-param-output"><span class="type-annotation"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/CodedBufferWriter-class.html">CodedBufferWriter</a></span> <span class="parameter-name">output</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Same as <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/writeToBuffer.html">writeToBuffer</a>, but serializes to the given <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/CodedBufferWriter-class.html">CodedBufferWriter</a>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="writeToJson" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/writeToJson.html">writeToJson</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a JSON string that encodes this message.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="writeToJsonMap" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/writeToJsonMap.html">writeToJsonMap</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns the JSON encoding of this message as a Dart <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/GeneratedMessage/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+  <section class="summary offset-anchor" id="static-methods">
+    <h2>Static Methods</h2>
+    <dl class="callables">
+        <dt id="create" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/create.html">create</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_messages.pb/KaspadRequest-class.html">KaspadRequest</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="createRepeated" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/createRepeated.html">createRepeated</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/protobuf/4.1.0/protobuf/PbList-class.html">PbList</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../kaspa_grpc_messages.pb/KaspadRequest-class.html">KaspadRequest</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="getDefault" class="callable">
+  <span class="name"><a href="../kaspa_grpc_messages.pb/KaspadRequest/getDefault.html">getDefault</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../kaspa_grpc_messages.pb/KaspadRequest-class.html">KaspadRequest</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+    </dl>
+  </section>
+    
+
+  </div> <!-- /.main-content -->
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../index.html">kaspa_flutter_core</a></li>
+    <li><a href="../kaspa_grpc_messages.pb/">messages.pb</a></li>
+    <li class="self-crumb">KaspadRequest class</li>
+</ol>
+
+    <h5>messages.pb library</h5>
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div>
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+</main>
+<footer>
+  <span class="no-break">
+    kaspa_flutter_core
+      0.1.0
+  </span>
+  
+</footer>
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+
